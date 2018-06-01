@@ -1,5 +1,5 @@
 Quickstart
-========
+==========
 
 The QCADesigner-E is an extension of the QCADesigner (version 2.0.3) [1] and has been developed at the University of Bremen. The tool, which has been presented in [2] (https://doi.org/10.1109/TCAD.2018.2789782), implements the estimation of the power dissipation of QCA circuits based on the works of Timler and Lent et al. [3-5]. The extension is integrated as an additional simulation module that is based on the Coherence Vector Simulation Engine (CVSE). Further, The QCADesigner-E  is fully compatible to QCA designs generated with the QCADesigner version 2.0.3.
 
@@ -46,6 +46,15 @@ Run QCADesignerE with
 ```sh
 $ bin\QCADesigner &
 ```
+
+Information
+===========
+- You can find a list of pre-implemented cells in the folder "circuits".
+
+- A detailed description of the QCADesigner can be found in the folder "QCAEnergy\src\docs\manual"
+
+- You can find a description of the parts that have been added to the QCADesigner-E in file "Manual_QDE.pdf"
+
 
 References
 ==========

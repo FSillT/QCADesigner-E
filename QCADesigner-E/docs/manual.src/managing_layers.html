@@ -1,0 +1,85 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="QCADesigner.ico" type="image/x-icon">
+    <title>QCADesigner - Documentation</title>
+</head>
+<body bgcolor="#ffffff" marginwidth="0" marginheight="0" leftmargin="0" topmargin="0">
+<a name="top">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td colspan="2" align="left" valign="middle">
+<img src="images/qcadlogo_gradient.png" alt="QCADesigner <:>"><br>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" bgcolor="#cad6e2" width="0%">
+
+<!--MENU-->
+
+</td>
+<td align="left" valign="top">
+<table border="0" cellspacing="0" cellpadding="10"><tr><td>
+<h1>QCA<em>Designer</em> Documentation</h1>
+
+      <h2>Managing Layers</h2>
+      <p>Layers allow for a separation of objects into different groups which 
+        can be manipulated together. Layers also separate different objects by 
+        virtue of their type, i.e. cells go into cell layers. Layers exsist for cells
+        (<img src="images/cells_layer.png" alt="Cell layer icon" align="absmiddle">),
+        drawing objects (<img src="images/drawing_layer.png" alt="Drawing layer icon" align="absmiddle">), 
+        substrates (<img src="images/substrate_layer.png" alt="Substrate layer icon" align="absmiddle">), etc. 
+        The present listing of layers can be viewed by pulling down the layers pulldown.</p>
+      <p align="center"><img src="images/layers_pulldown.png" alt="Layers Combo"></p>
+      <p align="left">As you can see the present design consists of seven layers. 
+        Notice that the last four layers are cell layers and are displayed with 
+        the <img src="images/cells_layer.png" align="absmiddle" alt="Cell layer icon"> 
+        icon. When a layer is set <strong>visible</strong>, the objects in that 
+        layer are displayed in the design area. When a layer is set <strong>active</strong>, 
+        the user can manipulated the objects in that layer. Of course when a layer 
+        is not <strong>visible</strong> it is also not <strong>active</strong>.</p>
+      <hr>
+      <h2>Layer Ordering</h2>
+      <p>The order in which layers appear in the layers list is important for 
+        cell layers becuase it determines their physical relation to one another, 
+        i.e. one layer of cells is directly above another but below yet another. 
+        To reorder the list of layers click the reorder button <img src="images/rearrange_layers_button.png" align="absmiddle" alt="Reorder layers button"> 
+        in the <a href="images/layers_toolbar.png">layers toolbar</a>. Once the layers 
+        list pops up you can drag and drop layers to achieve the correct order 
+        as shown below.</p>
+      <p align="center"><img src="images/layer_order_dialog.png" alt="Layer order dialog"></p>
+      <p align="left">The cell layer which appears at the top most position in 
+        the list is considered to be at the lowest physical location. Layers appearing 
+        below this layer are considered to be physically stacked on top of this 
+        layer. </p>
+
+<hr>
+    <h2>Creating a New Layer</h2>
+      <p>To create a new layer click the <img src="images/add_layer_button.png" align="absmiddle" alt="Add layer button [+]"> 
+        button in the toolbar. The new layer dialog will pop up.</p>
+      <p align="center"><img src="images/layer_properties_dialog_2.png" alt="Layer properties dialog"></p>
+      <p align="left">In this dialog you can set the layer type, layer status, 
+        and layer description (which is the layer name), as well as the default 
+        properties for that particular layer. When satisfied with the new layer 
+        click ok.</p>
+      <hr>
+      <h2>Deleting a Layer</h2>
+      <p>To delete the presently selected layer click the <img src="images/remove_layer_button.png" align="absmiddle" alt="Remove layer button [-]"> 
+        button.</p>
+      <p align="left">&nbsp;</p>
+      <hr>
+      <h2>Concentrating On A Layer</h2>
+      <p>When working for a protracted period of time with a certain layer, you may want to
+         make sure that no other active layer interferes with your work. To this end, you
+         can quickly hide all layers except the selected one, by pressing <b>Ctrl+H</b>, or
+         by choosing "Main Menu:Tools&rarr;Hide All But The Selected Layer".</p>
+</td></tr></table>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr>
+<a href="#top">Top of the page</a>
+<p></td></tr></table>
+</body></html>
+<p>

@@ -1,0 +1,48 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+    	<link rel="shortcut icon" href="QCADesigner.ico" type="image/x-icon">
+    	<title>QCADesigner - Documentation</title>
+</head>
+<body bgcolor="#ffffff" marginwidth="0" marginheight="0" leftmargin="0" topmargin="0">
+<a name="top">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td colspan="2" align="left" valign="middle">
+<img src="images/qcadlogo_gradient.png" alt="QCADesigner <:>"><br>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" bgcolor="#cad6e2" width="0%">
+
+<!--MENU-->
+
+</td>
+<td align="left" valign="top">
+<table border="0" cellspacing="0" cellpadding="10"><tr><td>
+<h1>QCA<em>Designer</em> Documentation</h1>
+
+<h2>Vector Table</h2>
+
+<p>The vector table simulation type allows you to specify the input vectors, as well as the order in which they are applied to the inputs of your circuit. The vector table simulation is only available if you already have cells designated as inputs in your circuit. For each available input you can specify a binary value in each vector. To select the Vector Table simulation type click "Simulation&rarr;Simulation Type Setup", and make sure that Vector Table is selected as shown below.
+
+<p><center><img src="images/vector_table_select.png"></center>
+
+<p>You will notice that all the inputs in your design are indicated with their associated names, and they are grouped into the buses you created for them. Each of the inputs is Active by default. You can make any input Inactive by toggling the Active checkbox. When an input is Inactive it is simulated as if it were just a regular cell in the design; i.e. it is allowed to switch with the influence of its neighbors. To append vectors to the end, click the <img src="images/add-vector-button.png" alt="Add Vector" align="absmiddle"> button. You can also insert a new vector in front of an existing one by clicking on the column header of the existing one and clicking on the <img src="images/insert-before-button.png" align="absmiddle" alt="Insert Vector Before"> button:</p>
+<p><center><img src="images/inserting_vectors.png" alt="Inserting a new vector"></center></p>
+<p>Now, to specify the value of a vector, you can either specify the value of each bus, or you can check the 
+box next to each input to set individual bits high or low.</p>
+<p><center><img src="images/editing_vectors.png" alt="Editing vectors"></center></p>
+<p>To delete a vector, click on its column header and click the <img src="images/delete-vector-button.png" align="absmiddle" alt="Delete Vector"> button.
+
+<p>When you have completed your vector table you may save it using the <img src="images/save-vector-table-button.png" align="absmiddle" alt="Save Vector Table"> button. You can also open and use a previously saved vector table. If the other vector table contains fewer inputs then your design then each extra input not loaded from the vector table will be padded with 0s. On the other hand, if the vector table contains more inputs, it will be truncated. Click the <img src="images/close-vector-table-button.png" align="absmiddle" alt="Close"> button to use the vector table. The next simulation you perform will be based on the chosen vectors. Note: if you add or remove inputs to your design, make sure to go back and edit your vector table.
+</td></tr></table>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr>
+<a href="#top">Top of the page</a>
+<p></td></tr></table>
+</body></html>
+<p>

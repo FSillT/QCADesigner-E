@@ -1,0 +1,158 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+    	<link rel="shortcut icon" href="QCADesigner.ico" type="image/x-icon">
+    	<title>QCADesigner - Documentation</title>
+</head>
+<body bgcolor="#ffffff" marginwidth="0" marginheight="0" leftmargin="0" topmargin="0">
+<a name="top">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td colspan="2" align="left" valign="middle">
+<img src="images/qcadlogo_gradient.png" alt="QCADesigner <:>"><br>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" bgcolor="#cad6e2" width="0%">
+
+<!--MENU-->
+
+</td>
+<td align="left" valign="top">
+<table border="0" cellspacing="0" cellpadding="10"><tr><td>
+<h1>QCA<em>Designer</em> Documentation</h1>
+
+<h2>Bistable Simulation Engine</h2>
+<p>The bistable simulation engine assumes that each cell is a simple two-state system. For this two-state system, it has been shown that the following Hamiltonian can be constructed<a href="#1">[1]</a>:
+
+<p><center><img src="images/two_state_hamiltonian.png"></center>
+
+      <p>where <i>E<sup>k</sup><sub>i,j</sub></i> is the kink energy between cell 
+        <i>i</i> and <i>j</i>. This kink energy is associated with the energy 
+        cost of two cells having opposite polarization. <i>P<sub>j</sub></i> is 
+        the polarization of cell <i>j</i>. <i>&gamma;</i> is the tunneling energy 
+        of electrons within the cell. The summation is over all cells within an 
+        <a href="#radius_of_effect">effective radius</a> of cell <i>i</i>, and 
+        can be set prior to the simulation. Using the time-independent Schroedinger 
+        equation we are able to find the stationary states of the cell in the 
+        environment described by this Hamiltonian.
+<p><center><img src="images/shroedinger_equation.png"></center>
+
+      <p>where <i>H<sub>i</sub></i> is the Hamiltonian given above. <i>&psi;<sub>i</sub></i> 
+        is the state vector of the cell. <i>E<sub>i</sub></i> is the energy associated 
+        with the state. When evaluated, this eigenvalue problem reduces to the 
+        following simple relation
+      <p>
+        <center>
+          <img src="images/nonlinear_approx_formula.png"> 
+        </center>
+      <p>where <i>P<sub>i</sub></i> is the polarization state of the cell, and 
+        <i>P<sub>j</sub></i> is the polarization state of the neighboring cells. 
+        Since experimentally determined switching times are not available, the 
+        simulation does not include any timing information. Using this response 
+        function the simulation engine calculates the state of each cell with 
+        respect to other cells within a preset effective radius. This calculation 
+        is iterated until the entire system converges within a predetermined tolerance. 
+        Once the circuit has converged, the output is recorded and new input values 
+        are set. It is believed that although this approximation is sufficient 
+        to verify the logical functionality of a design it cannot be extended 
+        to include valid dynamic simulation; but, as a result of its simplicity 
+        this simulation engine is able to simulate a large number of cells very 
+        rapidly, and therefore provides a good in-process check of the design. 
+        For dynamical simulations refer to the <a href="coherence_vector_engine.html">coherence 
+        vector simulation</a>. 
+      <h2>Kink Energy</h2>
+<p>The kink energy <i>E<sup>k</sup><sub>i,j</sub></i> represents the energy cost of cells <i>i</i> and <i>j</i> having opposite polarization. It is calculated simply from the electrostatic interaction between all the charges (mobile/immobile). That is, for each dot in cell <i>i</i> we calculate the electrostatic interaction between this dot and each dot in cell <i>j</i> as
+
+<p><center><img src="images/electrostatic_energy.png"></center>
+
+<p>here &epsilon;<sub>0</sub> is the permittivity of free space and &epsilon;<sub>r</sub> is the <a href="#relative_permittivity">relative permittivity</a> of the material system. This is summed over all <i>i</i> and <i>j</i>. To find the kink energy we first compute this electrostatic energy when the cells have opposite polarization, then again when the cells have the same polarization and subtract them.
+
+<p>Because the cell is charge neutral (immobile positive charges cancel the charged electrons) the cells interact through a quadrupole-quadrupole interaction which decays inversely as a power of five of the distance between cells. Therefore the kink energy will decay rapidly with distance and the <a href="#radius_of_effect">effective neighborhood</a> of interacting cells can be made small.
+
+<a name="engine_options">
+<h2>Engine Options</h2>
+
+<center>
+        <img src="images/bistable_options.png" alt="Bistable Simulation Options">
+</center>
+
+<a name="number_of_samples">
+<h3>Number of Samples</h3>
+
+<p>The total simulation is divided by the number of samples. For each sample, the simulation engine looks at each cell and calculates its polarization based on the polarization of its effective neighbors (determined by the radius of effect). The larger this number the longer the simulation will take to complete. However, if you choose too small a number you may not get the expected results, because there will not be sufficient samples during input transitions. If you suspect that your results should be something other than what they are, I recommend that you try to increase this number.
+
+<p><b>TIP:</b> If other parameters are default, try setting the number of samples to 1000 times the number of vectors you are simulating. For exhaustive simulation set to 2000 times 2<sup>n</sup>, where n is the total number of inputs in your design. 
+
+<a name="convergence_tolerance">
+<h3>Convergence Tolerance</h3>
+
+<p>During each sample, each cell is converged by the simulation engine. The sample will complete when the polarization of each cell has changed by less then this number; i.e. loop while any design cell has (old_polarization - new_polarization) > convergence_tolerance. 
+
+<a name="radius_of_effect">
+<h3>Radius of Effect</h3>
+
+      <p>Because the interaction effect of one cell onto another decays inversely 
+        with the fifth power of the distance between cells, we do not need to 
+        consider each cell as effecting every other cell. This number determines 
+        how far each cell will look to find its neighbors. Make sure that at least 
+        the next-to-nearest neighbors are included in this radius. If you only 
+        allow for the nearest neighbor then I would not expect designs with coplanar 
+        crossovers to work. The following figure should help clear this up. 
+      <p><center>
+          <p><img src="images/radius_of_effect.png"></p>
+          <p align="left">Note that with multilayer capability the radius of effect 
+            is extended into the third dimension. Therefore in order to include 
+            cells in adjacent layers, make sure that the <a href="#layer_separation">layer 
+            separation</a> is less than the radius of effect.</p>
+        </center>
+
+<a name="relative_permittivity">
+<h3>Relative Permittivity</h3>
+
+<p>The relative permittivity of the material system you want to simulate. For GaAs/AlGaAs it is roughly 12.9 which is the default value. This is only used in calculating the kink energy. 
+
+<a name="clock_low"> <a name="clock_high"> <h2>Clock Signal</h2>
+      <p>The clock signal in <strong>QCA<em>Designer</em></strong> is calculated 
+        as a hard-saturating cosine as shown below. The clock signal is tied directly 
+        to the tunneling energy in the Hamiltonian.</p>
+      <p align="center"><img src="images/clock_signal.png" alt="Clock signal"></p>
+      <h3>Clock High/Clock Low</h3>
+      <p>Clock low and high values are the saturation energies for the clock signal. 
+        When the clock is high the cell is unlatched. When it is low the cell 
+        is latched. The defaults seem to work in most cases, however, you may 
+        wish to play with them. 
+      <h3>Clock Shift</h3>
+      <p>The clock shift allows you to add a positive or negative offset to the 
+        clock as shown in the above figure. 
+      <h3>Clock Amplitude Factor</h3>
+      <p>Clock amplitude factor is multiplied by (Clock High - Clock Low) and 
+        reflects the amplitude of the underlying cosine as shown in the above 
+        figure.</p>
+      <h3><a name="layer_separation"></a>Layer Separation</h3>
+      <p> When simulating multilayer QCA circuits, this determines the physical 
+        separation between the different cell layers in [nm].</p>
+      <h3>Maximum Iterations Per Sample</h3>
+      <p>If the design does not converge in this number of iterations, then the simulation 
+        will move on to the next sample point. For complex designs you may wish 
+        to increase this.
+      <h3>Randomize Simulation Order</h3>
+      <p>When active, the order in which cells are simulated is randomized in 
+        each iteration. I recommend leaving this on.</p>
+      <h3>Animate</h3>
+      <p>When active, the circuit will be animated throughout the simulation. 
+        If you zoom into the cells during the simulation you will notice that 
+        the polarization of the cells change.</p>
+      <h3>References</h3>
+<a name="1">
+<p>[1] G. Toth, "Correlation and coherence in quantum-dot cellular automata", <i>Ph.D. Thesis</i>, University of Notre Dame, pp. 56-63, 2000.
+</td></tr></table>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr>
+<a href="#top">Top of the page</a>
+<p></td></tr></table>
+</body></html>
+<p>

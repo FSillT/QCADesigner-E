@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:complexType name="clr">
+    <xs:all>
+      <xs:element name="r"            type="xs:nonNegativeInteger"/>
+      <xs:element name="g"            type="xs:nonNegativeInteger"/>
+      <xs:element name="b"            type="xs:nonNegativeInteger"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="WorldRectangle">
+    <xs:all>
+      <xs:element name="xWorld"       type="xs:float"/>
+      <xs:element name="yWorld"       type="xs:float"/>
+      <xs:element name="cxWorld"      type="xs:float"/>
+      <xs:element name="cyWorld"      type="xs:float"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="QCADDesignObject">
+    <xs:all>
+      <xs:element name="x"            type="xs:float"/>
+      <xs:element name="y"            type="xs:float"/>
+      <xs:element name="bSelected"    type="xs:boolean"/>
+      <xs:element name="clr"          type="clr"/>
+      <xs:element name="bounding_box" type="WorldRectangle"/>
+    </xs:all>
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="QCADStretchyObject">
+    <xs:complexContent>
+      <xs:extension base="QCADDesignObject"/>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="QCADDrawingObject">
+    <xs:complexContent>
+      <xs:extension base="QCADStretchyObject"/>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="QCADLabel">
+    <xs:complexContent>
+      <xs:extension base="QCADDrawingObject">
+        <xs:all>
+          <xs:element name="psz"         type="xs:string"/>
+          <xs:element name="bShrinkwrap" type="xs:boolean"/>
+        </xs:all>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="QCADSubstrate">
+    <xs:complexContent>
+      <xs:extension base="QCADStretchyObject">
+        <xs:all>
+          <xs:element name="grid_spacing" type="xs:float"/>
+        </xs:all>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="QCADCellOptions">
+    <xs:all>
+      <xs:element name="cxCell"       type="xs:float"/>
+      <xs:element name="cyCell"       type="xs:float"/>
+      <xs:element name="dot_diameter" type="xs:float"/>
+      <xs:element name="clock"        type="xs:float"/>
+      <xs:element name="mode"         type="xs:boolean"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="QCADCellDot">
+    <xs:all>
+      <xs:element name="x"         type="xs:float"/>
+      <xs:element name="y"         type="xs:float"/>
+      <xs:element name="diameter"  type="xs:float"/>
+      <xs:element name="charge"    type="xs:float"/>
+      <xs:element name="spin"      type="xs:float"/>
+      <xs:element name="potential" type="xs:float"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:simpleType name="QCADCellFunction">
+   <xs:restriction base="xs:string">
+    <xs:enumeration value="QCAD_CELL_NORMAL"/>
+    <xs:enumeration value="QCAD_CELL_INPUT"/>
+    <xs:enumeration value="QCAD_CELL_OUTPUT"/>
+    <xs:enumeration value="QCAD_CELL_FIXED"/>
+   </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="QCADCell">
+    <xs:complexContent>
+      <xs:extension base="QCADDesignObject">
+        <xs:all>
+          <xs:element name="cell_options"  type="QCADCellOptions"/>
+          <xs:element name="cell_function" type="QCADCellFunction"/>
+          <xs:element name="cell_dots">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="dot" type="QCADCellDot" minOccur="1" maxOccur="unbounded"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="label" type="QCADLabel"/>
+          <xs:element name="host_name" type="xs:string"/>
+        </xs:all>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:simpleType name="LayerStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="LAYER_STATUS_ACTIVE"/>
+      <xs:enumeration value="LAYER_STATUS_VISIBLE"/>
+      <xs:enumeration value="LAYER_STATUS_HIDDEN"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="layer">
+    <xs:all>
+      <xs:element name="status"         type="LayerStatus"/>
+      <xs:element name="pszDescription" type="xs:string"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="cell_layer">
+    <xs:complexContent>
+      <xs:extension base="layer">
+        <xs:sequence>
+          <xs:element name="lstObj" type="QCADCell" minOccur="0" maxOccur="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="substrate_layer">
+    <xs:complexContent>
+      <xs:extension base="layer">
+        <xs:sequence>
+          <xs:element name="lstObj" type="QCADSubstrate" minOccur="0" maxOccur="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="drawing_layer">
+    <xs:complexContent>
+      <xs:extension base="layer">
+        <xs:sequence>
+          <xs:element name="lstObj" type="QCADLabel" minOccur="0" macOccur="unbounded"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="design_layer">
+    <xs:choice>
+      <xs:element name="cell_layer"      type="cell_layer"/>
+      <xs:element name="substrate_layer" type="substrate_layer"/>
+      <xs:element name="drawing_layer"   type="drawing_layer"/>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:complexType name="bus">
+    <xs:all>
+      <xs:element name="pszName"      type="xs:string"/>
+      <xs:element name="bus_function" type="QCADCellFunction"/>
+      <xs:element name="cell_indices">
+        <xs:simpleType>
+          <xs:list itemType="xs:nonNegativeInteger"/>
+        </xs:simpleType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="bus_layout">
+    <xs:all>
+      <xs:element name="inputs" minOccur="0">
+        <xs:simpleType>
+          <xs:list itemType="xs:IDREF"/>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="outputs" minOccur="0">
+        <xs:simpleType>
+          <xs:list itemType="xs:IDREF"/>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="buses">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="bus" type="bus" minOccur="0" maxOccur="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="design">
+    <xs:all>
+      <xs:element name="lstLayers">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="layer" type="design_layer" minOccur="1" maxOccur="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="bus_layout" type="bus_layout"/>
+    </xs:all>
+    <xs:attribute name="version" type="xs:float" use="required"/>
+  </xs:complexType>
+
+  <xs:element name="design" type="design"/>
+</xs:schema>

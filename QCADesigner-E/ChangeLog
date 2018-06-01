@@ -1,0 +1,37 @@
+ChangeLog for next release -- 1.3.
+
+Completed Changes/Bug Fixes/Additions:
+
+ -- Started gtk2 port (available via the gtk2 tag: cvs co -r gtk2 QCADesigner)
+
+ -- Created gtk2 version of the scrolling message widget, because under
+    GTK2 multiline text is done waaaay differently.  Factored out the 
+    process of writing messages to the widget into a printf()-like 
+    function.
+ -- Save first boxes added.
+ -- Digital Simulation engine made available.
+ -- Created new vector table library and struct to replace old vector_table and
+    active_inputs structures.
+ -- Moved all simulation engines to this new vector table structure
+ -- Removed globals "vector_table" and "active_inputs" and their respective
+    structures
+ -- Created new user interface for specifying vector tables
+ -- Added basic Undo/Redo capabilities for creating cells
+ -- Fixed clipping bug occurring with toolbar pixmaps
+ -- Rotate cells now can rotate all selected cells if they are selected prior
+    to pushing the rotate button.
+ -- Added view menu item to remove pixmaps from the toolbar. Useful feature
+    for small screen laptops.
+ -- Mirror cells now mirrors all the properties of the cells including type and
+    input/output names.
+ -- Added menu item under tools to rotate block of selected cells by 90 degrees.
+ -- Added Hotkeys for "Increment Cell Clocks" (Ctrl+I)
+
+Desired Changes:
+
+Bugs to Fix:
+-- Some weird vector table behaviour with the bistable engine
+
+Long Range Changes:
+ -- XML File format (tdysart currently working on)
+	

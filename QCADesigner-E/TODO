@@ -1,0 +1,98 @@
+////////////// QCADesigner TODO /////////////////
+
+[ ] One selection renderer per layer => compositing
+[ ] two apps: 
+    - design creation: main_window
+    - design testing: graph dialog + bus layout + vector table + sim engine
+      - Simulation data /is/ vector table
+      - What about number of samples ? Assemble simulation data the way the 
+        engine would. IOW, copy the assembly code out of the top of the main
+        simulation routine
+      - What to display when output no longer reflects inputs ? "Out of date"
+        in top left corner of trace
+      - Disable engaging simulation when simulation data i loaded from file
+      - Editable input honeycombs <=> vector table
+      - Button to fill with exhaustive
+      - Button to switch back to the sim data for current design
+      - Custom (or pixbuf) cell renderer for waveforms and honeycombs
+
+[ ] Add ability for user to change the colors
+[ ] Draw mesurements onto the screen and have them remain as a selectable 
+    object
+[ ] Density/Area Stats
+[ ] Graph dialog time reference
+[ ] Ability to input dec and hex into the vector table
+[ ] Fork off a process to wait for the previewer and then delete the temp file, 
+    in case the previewer survives us
+[ ] Print dialog: list of strings representing font names to be used
+[ ] graph dialog: All honeycombs for a given bus trace should show as many
+    digits as the largest honeycomb value
+
+2.0.3
+================================================================================
+[X] Switched Windows version from antiquated dropline.net GTK+ distribution to
+    Gaim's own GTK+-2.6. This way we can start excising some of the old widgets.
+[X] Internationalization now works in Windows. To use the alternative languages,
+    set the environment variable LANG to one of de_DE,hu_HU,ro_RO, or fr_FR in
+    the "System" control panel's "Advanced" tab.
+[X] Converted the layer mapping dialog to a GtkTreeView, including a cell 
+    renderer that presents a popup menu of available destination layers (in lieu
+    of a GtkCellRendererComboBox). 
+[X] Updated manual to reflect new layer mapping dialog behaviour
+[X] Cleaned up the gtk_preamble somewhat.
+
+2.0.2
+================================================================================
+[x] Brand new, more stable, better, cleaner, sharper, neater, greener vector
+    table options dialog using GtkTreeView.
+[X] Convert input to fixed cell, and it continues to show up in vector table.
+    Reload file and it dies when trying vector table simulation.
+[X] Turn output cell into normal cell, and label persists even across reload.
+
+2.0.1
+================================================================================
+[X] Does -P have to be present after co in CVS commands ? No.
+[X] Line up exhaustive vs. exhaustive vector table simulation results
+[X] Open 4_bit_adder, delete everything past and including the adders, simulate:
+    segfault.
+[X] Selection anchor (when copying?) is chosen "arbitrarily".
+[X] Fix sim results printout such that honeycomb and waveform trace headers have
+    identical widths.
+[X] Draw only visible honeycombs
+[X] Separate simulation results viewer tool
+[X] Sub-nanometer cell sizes (via more digits and non-snap-to-tics in spin 
+    button)
+[X] Ctrl+Shift+S == Save As
+[X] Set file selection dialog to a more sensible default:
+    show_graph_dialog (char *pszSimOutputFName) ;
+    sets the file selection to the file name
+    create the file selection is now public
+[X] Ability to horizontally stretch traces
+    - Status bar indicates sample index when mouse moves over traces
+    - Hilighting an interval between to samples on a trace will stretch that 
+      interval to fit the window
+    - Right-clicking before releasing the left mouse button while hilighting a 
+      sample range cancels impending stretch
+[X] Consistent look for all tools:
+    Move the pixmap registration code out of main.c so other gtk targets can 
+    benefit from it.
+[X] Both honeycomb and waveform drawing areas get created the same way - factor 
+    out the code
+
+2.0.0
+================================================================================
+[X] Cell Library
+[X] Hot Key for activating/deactivating all layers other then the one presently
+    in use.z
+[X] Check all menu items most do not work yet. Remove any unused menu items
+[W] Difficult to select anything for moving when zoomed out far (workaround: 
+    Cancel selection via right-click)
+[X] Rotated cells are not printed as such
+[X] Must drop selection in layer before deactivating that layer else the 
+    selected objects will not be drawn.
+[X] Confirmation check on layer delete, unless undo is available
+
+Incompleted Man Pages
+[X] Create/Import Block Man page
+[X] Vector Table Man page
+[X] Correct the bistable man page to include the nonlinear functions

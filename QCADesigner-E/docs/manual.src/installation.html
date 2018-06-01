@@ -1,0 +1,116 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="QCADesigner.ico" type="image/x-icon">
+    <title>QCADesigner - Documentation</title>
+</head>
+<body bgcolor="#ffffff" marginwidth="0" marginheight="0" leftmargin="0" topmargin="0">
+<a name="top">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td colspan="2" align="left" valign="middle">
+<img src="images/qcadlogo_gradient.png" alt="QCADesigner <:>"><br>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" bgcolor="#cad6e2" width="0%">
+
+<!--MENU-->
+
+</td>
+<td align="left" valign="top">
+<table border="0" cellspacing="0" cellpadding="10"><tr><td>
+<h1>QCA<em>Designer</em> Documentation</h1>
+
+<h2>Installation</h2>
+These instructions should guide you through he installation procedure.
+
+<h3>Under Microsoft Windows</h3>
+
+      <p>In order to run <strong>QCA<em>Designer</em></strong> under Microsoft Windows 
+        you will require an extra package called GTK+. Download and install the 
+        GTK Runtime Environment from <a href="http://dropline.net/gtk">http://dropline.net/gtk</a>. 
+        Once you have installed the runtime environment download the <strong>QCA<em>Designer</em></strong> 
+        self-extracting executable from the <a href="http://www.qcadesigner.ca/download.html"> download 
+        page</a> and install it. This should be all you will require to run <strong>QCA<em>Designer</em></strong> 
+        under Windows. 
+      <h3>RPM Based Systems</h3>
+<p>Note: you will require the root password. 
+
+      <p>Download the RPM version of <strong>QCA<em>Designer</em></strong> for your 
+        particular architecture from the <a href="http://www.qcadesigner.ca/download.html">download 
+        page</a>. Login as root and go to the directory where the downloaded RPM 
+        is located. To install the RPM type: 
+      <p><i>rpm -Uhv QCADesigner[version you downloaded].rpm</i> 
+
+      <p>That should be all you need. Now run <strong>QCA<em>Designer</em></strong> 
+        with the command 
+      <p><i>QCADesigner</i>
+
+<p>If for any reason the binary RPMs fail to install on your system, you can produce your own binary RPMs from the source RPM available on the <a href="http://www.qcadesigner.ca/download.html">download page</a>.  First, download the source RPM (QCADesigner-&lt;version&gt;-1.src.rpm).  Then, as root, type
+
+<p><i>rpmbuild --rebuild QCADesigner-&lt;version&gt;-1.src.rpm</i>
+
+<p>This will create binary RPMs under /usr/src/redhat/RPMS.  Look for them there.  Their file names will be of the form QCADesigner-&lt;version&gt;-1.&lt;arch&gt;.rpm.
+
+
+<a name="source">
+<h3>From Source</h3>
+<p>Download the source from the <a href="http://www.qcadesigner.ca/download.html">download page</a>. Extract the package to a known directory by typing
+
+<p><i>tar -xzvf QCADesigner[version you downloaded].tar.gz</i> &larr; For tar.gz sources.
+<p><i>tar -xjvf QCADesigner[version you downloaded].tar.bz2</i> &larr; For tar.bz2 sources.
+
+<p>Switch to the new directory:
+
+<p><i>cd QCADesigner[version you downloaded]</i>
+
+<p>Prepare the program for compiling by typing 
+
+<p><i>./autogen.sh</i>
+
+<p>Next, you have to run the <i>configure</i> script to customize the compilation process for
+   your system. The <i>configure</i> script provides many options. The most commonly used one
+   is <i>--prefix=[directory]</i>, where <i>directory</i> is the directory where you would
+   like to install <strong>QCA<em>Designer</em></strong>. Once installed, the
+   <strong>QCA<em>Designer</em></strong> program will be at <i>directory/bin/QCADesigner</i>.
+   For example:</p>
+
+<p><i> ./configure --prefix=/home/your_account/your_install_location</i>
+
+<p>Type <i>./configure --help</i> for a complete list of <i>configure</i> options.
+
+<p>Compile the program with
+
+<p><i>make</i>
+
+<p>Install the program with 
+
+<p><i>make install</i>
+
+      <p>Run <strong>QCA<em>Designer</em></strong> with 
+      <p><i>QCADesigner &amp;</i>
+
+<p>Voila!
+
+<h3>Under Mac OS X</h3>
+      <strong>QCA<em>Designer</em></strong> will run under Mac OS X, however, you will 
+      require several other packages to do this. Basically, these packages will 
+      allow you to run Unix applications on you Mac. First you will need to install 
+      <a href="http://fink.sourceforge.net">Fink</a>. When, within Fink, you choose the packages 
+      you would like installed, make sure to include the package GTK+. You will also require the <a href="http://www.apple.com/macosx/features/x11/">X11 
+      server</a>. Once you have these packages you should be able to download 
+      and install <strong>QCA<em>Designer</em></strong><a href="#source"> from 
+      source</a>. Sorry that this is not a step-by-step guide, but fink is constantly 
+      evolving, so I could end up leading you down the wrong path. You should 
+      read the installation instructions carefully on the Fink site.
+</td></tr></table>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr>
+<a href="#top">Top of the page</a>
+<p></td></tr></table>
+</body></html>
+<p>

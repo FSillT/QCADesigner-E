@@ -1,0 +1,96 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="QCADesigner.ico" type="image/x-icon">
+    <title>QCADesigner - Documentation</title>
+</head>
+<body bgcolor="#ffffff" marginwidth="0" marginheight="0" leftmargin="0" topmargin="0">
+<a name="top">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td colspan="2" align="left" valign="middle">
+<img src="images/qcadlogo_gradient.png" alt="QCADesigner <:>"><br>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" bgcolor="#cad6e2" width="0%">
+
+<!--MENU-->
+
+</td>
+<td align="left" valign="top">
+<table border="0" cellspacing="0" cellpadding="10"><tr><td>
+<h1>QCA<em>Designer</em> Documentation</h1>
+
+<h2>Manipulating Objects</h2>
+
+      <p>You can select objects on any active layer.</p>
+      <p><a name="selecting_objects"></a>You can select a single object by left-clicking on it.</p>
+      <hr>
+      <p>You can select any group of objects by left-clicking on the workspace and 
+        dragging the mouse to create a selection rectangle. The objects contained 
+        in that selection rectangle will be hilighted in <font color="#FF0000">red</font>. 
+        There are many things you can do with a selection: </p>
+      <hr>
+You can add objects to your selection by holding down <b>Shift</b> and creating a 
+selection rectangle, as above.  Deselected objects in the rectangle will be selected.
+
+<hr>
+You can remove objects from your selection by holding down <b>Ctrl</b> and creating a
+selection rectangle.  Selected objects in the rectangle will be deselected.
+<hr>
+You can create a copy of your selection by clicking "Copy" 
+<img src="images/copy_button.png" alt="[Copy]" align="absmiddle">. A copy of the selected objects
+will be created, unless your current selection cannot be dropped.
+If the location where you want to place the copy is off-screen, you 
+can use the mouse wheel to scroll there. Alone, the mouse wheel scrolls the 
+workspace up&larr;&rarr;down.  To scroll left&larr;&rarr;right, hold down <b>Ctrl</b> 
+while scrolling.
+<hr>
+To mirror a selection of objects, first select the objects you would like to mirror.
+Then, click "Mirror" <img src="images/mirror_button.png" align="absmiddle" alt="[Mirror]">. From
+the menu that pops up, choose either "Horizontally", if you want to mirror
+across the <i>x</i>-axis, or "Vertically", if you want to mirror across the
+<i>y</i>-axis.
+<hr>
+To rotate a block of objects by 90&deg;, first make a selection, then click
+"Tools&rarr;Rotate Selection":
+      <p align="center"> <img src="images/rotate_selection_menu.png" align="absmiddle" alt="Main Menu:Tools->Rotate Selection"> 
+      <p>
+Your selection will be rotated 90&deg;.  Click the menu item again and again to 
+rotate by 180&deg; and 270&deg;, respectively.
+<p>
+<b>TIP:</b> To rotate a copy of your selection, first make a selection, click
+"Copy", then click "Tools&rarr;Rotate Selection".
+<p>
+<hr>
+      To delete a selection of objects, first <a href="#selecting_objects">make such
+      a selection</a>. Then press the "Delete" key to delete your selection.
+<hr>
+  When you drag a selection and your objects are snapped to the grid, you
+  cannot move those objects around arbitrarily. However, by choosing <img align="absmiddle" src="images/translate_button.png" alt="[Translate]">,
+  you can move a selection by an arbitrary number of nanometers.
+<hr>
+  <p>To accomodate multilayer circuits, it is now possible to change the
+     appearance of cells. This does not affect their simulated behaviour. It is
+     merely a means of visually identifying cells overlapping on different
+     layers. To modify the appearance of selected cells, click <img src="images/alt_style_button.png" alt="Alternate style" align="absmiddle">
+     and choose from among 3 appearances from the popup menu.</p>
+ <p><b>TIP:</b> In the cell libraries, we observe the following convention:
+    <ol>
+    <li>Cells on the main layer are left unaltered, except for those underlying "via" cells.</li>
+    <li>Cells on "via" layers and those accessing "via" layers are drawn using the circular appearance.</li>
+    <li>Cells on "crossover" layers are drawn using the "X" appearance, except those accessing "via" layers.</li>
+    </ol>
+    This creates crossovers according to the following convention:</p>
+  <p><center><img src="images/alt_style_convention.png" alt="Style convention"></center></p>
+</td></tr></table>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr>
+<a href="#top">Top of the page</a>
+<p></td></tr></table>
+</body></html>
+<p>

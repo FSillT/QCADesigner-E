@@ -1,0 +1,11 @@
+[Desktop Entry]
+Comment=QCA-based circuit designer and simulator
+Name=Simulation Results Viewer
+Exec=graph_dialog %f
+Icon=/usr/share/QCADesigner/pixmaps/graph_dialog@ICON_EXT@
+Type=Application
+Terminal=0
+MapNotify=false
+Encoding=UTF-8
+X-Desktop-File-Install-Version=0.10
+Categories=Application;Development;X-Red-Hat-Extra;

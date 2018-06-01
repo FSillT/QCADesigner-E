@@ -1,0 +1,130 @@
+\dnl Process this file with autoconf to produce a configure script.
+
+AC_INIT(configure.in)
+AM_INIT_AUTOMAKE(QCADesigner, 2.0.3)
+AM_MAINTAINER_MODE
+
+AC_ISC_POSIX
+AC_CANONICAL_HOST
+AC_PROG_CC
+dnl AC_PROG_CXX
+AM_PROG_CC_STDC
+AM_PROG_CC_C_O
+AC_HEADER_STDC
+
+AC_ARG_WITH(
+  svgpix, 
+  [  --with-svgpix[[=ARG]]     use SVG icons ARG=[[detect]]|yes|no ], 
+  [ svgpix=$withval ],
+  [ svgpix=detect ])
+
+if test -z "$PKG_CONFIG"; then
+  AC_PATH_PROG(PKG_CONFIG, pkg-config, no)
+fi
+
+if test "$svgpix" = "detect"; then
+  AC_MSG_CHECKING(for librsvg)
+  if $PKG_CONFIG --modversion librsvg-2.0 > /dev/null 2>&1; then
+    AC_MSG_RESULT(yes)
+    AC_DEFINE(HAVE_LIBRSVG)
+    svgpix=yes
+  else
+    AC_MSG_RESULT(no)
+    svgpix=no
+  fi
+elif test "$svgpix" = "yes"; then
+  AC_DEFINE(HAVE_LIBRSVG)
+fi
+
+pkg_modules="gtk+-2.0 >= 2.2.0"
+PKG_CHECK_MODULES(GTK, [$pkg_modules])
+
+if $PKG_CONFIG --modversion cairo > /dev/null 2>&1; then
+  GTK_CFLAGS="${GTK_CFLAGS} `$PKG_CONFIG --cflags cairo`"
+  GTK_LIBS="${GTK_LIBS} `$PKG_CONFIG --libs cairo`"
+fi
+
+pkg_modules="gthread-2.0 >= 2.0.0"
+PKG_CHECK_MODULES(GTHREAD, [$pkg_modules])
+if echo "$build" | grep "solaris" > /dev/null; then
+  AC_MSG_CHECKING(for Sun WorkShop compiler)
+  if ${CC} -V 2>&1 | grep 'Sun WorkShop' > /dev/null; then
+    GTHREAD_CFLAGS=`echo ${GTHREAD_CFLAGS} | sed 's/-threads//g'`
+    GTHREAD_LIBS=`echo ${GTHREAD_LIBS} | sed 's/-threads//g'`
+    AC_MSG_RESULT(yes)
+  else
+    AC_MSG_RESULT(no)
+  fi
+fi
+
+dnl pkg_modules="libxml-2.0 >= 2.4.0"
+dnl PKG_CHECK_MODULES(LIBXML, [$pkg_modules])
+
+pkg_modules="glib-2.0 >= 2.0"
+PKG_CHECK_MODULES(GLIB, [$pkg_modules])
+
+pkg_modules="gobject-2.0 >= 2.0"
+PKG_CHECK_MODULES(GOBJECT, [$pkg_modules])
+
+AC_SUBST(GTK_CFLAGS)
+AC_SUBST(GTK_LIBS)
+AC_SUBST(GTHREAD_CFLAGS)
+AC_SUBST(GTHREAD_LIBS)
+dnl AC_SUBST(LIBXML_CFLAGS)
+dnl AC_SUBST(LIBXML_LIBS)
+AC_SUBST(GLIB_CFLAGS)
+AC_SUBST(GLIB_LIBS)
+AC_SUBST(GOBJECT_CFLAGS)
+AC_SUBST(GOBJECT_LIBS)
+
+GETTEXT_PACKAGE=QCADesigner
+AC_SUBST(GETTEXT_PACKAGE)
+AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE")
+
+dnl Set PACKAGE_SOURCE_DIR in config.h.
+packagesrcdir=`cd $srcdir && pwd`
+if echo $build | grep -q cygwin ; then
+  if test -x /usr/bin/cygpath ; then
+    packagesrcdir=`cygpath -dm ${packagesrcdir}`
+    prefix=`cygpath -dm ${prefix}`
+  fi
+fi
+AC_DEFINE_UNQUOTED(PACKAGE_SOURCE_DIR, "${packagesrcdir}", PACKAGE_SOURCE_DIR)
+
+dnl Use -Wall if we have gcc.
+changequote(,)dnl
+if test "x$GCC" = "xyes"; then
+  case " $CFLAGS " in
+  *[\ \	]-Wall[\ \	]*) ;;
+  *) CFLAGS="$CFLAGS -Wall" ;;
+  esac
+fi
+changequote([,])dnl
+
+dnl Add the languages which your application supports here.
+ALL_LINGUAS="de hu ro fr"
+AM_GLIB_GNU_GETTEXT
+
+if test "$svgpix" = "yes"; then
+  ICON_EXT=".svg"
+else
+  ICON_EXT="_0_48x48x24a.png"
+fi
+
+AC_SUBST(VERSION)
+AC_SUBST(prefix)
+AC_SUBST(ICON_EXT)
+AC_SUBST(packagesrcdir)
+
+AC_OUTPUT([
+Makefile
+src/Makefile
+po/Makefile.in
+docs/Makefile
+pixmaps/Makefile
+QCADesigner.desktop
+graph_dialog.desktop
+QCADesigner.spec
+QCADesigner-win32.iss
+QCADesigner-win32-gtk.iss
+])

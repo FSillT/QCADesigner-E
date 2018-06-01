@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   id="svg602"
+   sodipodi:version="0.32"
+   width="30pt"
+   height="30pt"
+   xml:space="preserve"
+   sodipodi:docname="q_cell_copy.svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="0.37"
+   sodipodi:docbase="/home/nix/calgary/source/QCADesigner.v1_9_90/pixmaps">
+  <defs
+     id="defs604">
+    <linearGradient
+       id="linearGradient751">
+      <stop
+         style="stop-color:#5ed7ff;stop-opacity:0.75;"
+         offset="0"
+         id="stop752" />
+      <stop
+         style="stop-color:#387f99;stop-opacity:0.75;"
+         offset="1"
+         id="stop753" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient746">
+      <stop
+         style="stop-color:#387f99;stop-opacity:0.75;"
+         offset="0"
+         id="stop747" />
+      <stop
+         style="stop-color:#2a5f73;stop-opacity:0.75;"
+         offset="1"
+         id="stop748" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient742">
+      <stop
+         style="stop-color:#000;stop-opacity:1;"
+         offset="0"
+         id="stop743" />
+      <stop
+         style="stop-color:#fff;stop-opacity:1;"
+         offset="1"
+         id="stop744" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient746"
+       id="linearGradient745"
+       x1="7.67676951e-3"
+       y1="3.03310901e-2"
+       x2="0.9885059"
+       y2="0.95454633" />
+    <linearGradient
+       xlink:href="#linearGradient746"
+       id="linearGradient749"
+       x1="1.15061589e-2"
+       y1="5.97252995e-2"
+       x2="0.99233735"
+       y2="0.95522445" />
+    <linearGradient
+       xlink:href="#linearGradient751"
+       id="linearGradient750"
+       x1="2.32804194e-2"
+       y1="2.34620664e-2"
+       x2="0.98449641"
+       y2="0.97656274" />
+    <linearGradient
+       xlink:href="#linearGradient751"
+       id="linearGradient754"
+       x1="1.93682779e-2"
+       y1="2.58198865e-2"
+       x2="0.98709714"
+       y2="0.98709714" />
+    <linearGradient
+       xlink:href="#linearGradient746"
+       id="linearGradient755"
+       x1="1.93478279e-2"
+       y1="1.93696264e-2"
+       x2="0.98709637"
+       y2="0.98064554" />
+    <linearGradient
+       xlink:href="#linearGradient746"
+       id="linearGradient756"
+       x1="1.5494734e-2"
+       y1="2.34568827e-2"
+       x2="0.99224776"
+       y2="0.98437524" />
+    <linearGradient
+       xlink:href="#linearGradient751"
+       id="linearGradient757"
+       x1="7.67474109e-3"
+       y1="0.96964568"
+       x2="0.99616873"
+       y2="1.51497126e-2" />
+    <linearGradient
+       xlink:href="#linearGradient751"
+       id="linearGradient758"
+       x1="7.67451618e-3"
+       y1="0.97009939"
+       x2="0.99233735"
+       y2="4.47748639e-2" />
+    <linearGradient
+       xlink:href="#linearGradient746"
+       id="linearGradient759"
+       x1="1.93481408e-2"
+       y1="0.97417831"
+       x2="0.98709637"
+       y2="1.93541385e-2" />
+    <linearGradient
+       xlink:href="#linearGradient746"
+       id="linearGradient760"
+       x1="1.54973418e-2"
+       y1="0.97654796"
+       x2="0.97674388"
+       y2="2.3437202e-2" />
+    <linearGradient
+       xlink:href="#linearGradient746"
+       id="linearGradient761"
+       x1="1.55156348e-2"
+       y1="0.9687376"
+       x2="0.97674447"
+       y2="3.1249702e-2" />
+    <linearGradient
+       xlink:href="#linearGradient746"
+       id="linearGradient762"
+       x1="1.29184555e-2"
+       y1="0.98062873"
+       x2="0.98709714"
+       y2="1.93541385e-2" />
+    <linearGradient
+       xlink:href="#linearGradient746"
+       id="linearGradient763"
+       x1="1.53346835e-2"
+       y1="2.29188222e-2"
+       x2="0.99233747"
+       y2="0.9770999" />
+    <linearGradient
+       xlink:href="#linearGradient746"
+       id="linearGradient764"
+       x1="7.79288169e-3"
+       y1="2.34585106e-2"
+       x2="0.99221832"
+       y2="0.97656274" />
+    <linearGradient
+       xlink:href="#linearGradient746"
+       id="linearGradient767"
+       x1="1.55758765e-2"
+       y1="0.97651386"
+       x2="0.99221832"
+       y2="1.56244934e-2" />
+    <linearGradient
+       xlink:href="#linearGradient746"
+       id="linearGradient768"
+       x1="7.67307822e-3"
+       y1="0.98469013"
+       x2="0.98850602"
+       y2="1.52668916e-2" />
+    <linearGradient
+       xlink:href="#linearGradient746"
+       id="linearGradient769"
+       x1="0.13041902"
+       y1="1.56275835e-2"
+       x2="0.95652092"
+       y2="0.98437506" />
+    <linearGradient
+       xlink:href="#linearGradient746"
+       id="linearGradient770"
+       x1="3.70181352e-2"
+       y1="1.93580166e-2"
+       x2="0.92592537"
+       y2="0.98709702" />
+    <linearGradient
+       xlink:href="#linearGradient751"
+       id="linearGradient771"
+       x1="3.7053898e-2"
+       y1="1.93575211e-2"
+       x2="0.92592627"
+       y2="0.98709702" />
+    <linearGradient
+       xlink:href="#linearGradient751"
+       id="linearGradient772"
+       x1="4.35029864e-2"
+       y1="4.68790606e-2"
+       x2="0.95652235"
+       y2="0.98437506" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     inkscape:zoom="7.35159119"
+     inkscape:cx="16.6451611"
+     inkscape:cy="16.6451595"
+     inkscape:window-width="400"
+     inkscape:window-height="501"
+     inkscape:window-x="1"
+     inkscape:window-y="0" />
+  <path
+     style="font-size:12;fill:none;fill-opacity:0.2471;fill-rule:evenodd;stroke:#000000;stroke-width:0.787521;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.7875 6.00 ;stroke-dashoffset:0;"
+     d="M 0.511193 8.166994 L 9.679589 17.33539 L 28.01638 17.33539 L 18.84799 8.166994 L 0.511193 8.166994 z "
+     id="Old Location Outline"
+     sodipodi:nodetypes="cccccc"
+     transform="matrix(1.21,0,0,1.21,2.493602,-1.496842)" />
+  <g
+     id="Shadow Cell"
+     style="font-size:12;"
+     transform="matrix(1.584822,0.000000,0.000000,1.584822,2.981579,4.413301)">
+    <path
+       style="font-size:12;fill:#00ffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.07;stroke-opacity:1;stroke-dasharray:none;"
+       d="M 0 2.5 L 7 9.5 L 21 9.5 L 14 2.5 L 0 2.5 z "
+       id="path633"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="font-size:12;fill:#00ffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;fill-opacity:0.07;stroke-opacity:1;stroke-dasharray:none;"
+       d="M 0 -0.5 L 0 2.5 L 14 2.5 L 14 -0.5 L 0 -0.5 z "
+       id="path634"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="font-size:12;fill:#00ffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.07;stroke-opacity:1;stroke-dasharray:none;"
+       d="M 14 -0.5 L 21 6.5 L 21 9.5 L 14 2.5 L 14 -0.5 z "
+       id="path635" />
+    <g
+       id="g636"
+       transform="translate(8,0)"
+       style="fill:#00ff00;fill-opacity:0.5;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round;">
+      <path
+         style="fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.12;stroke-dasharray:none;"
+         d="M 4.5 2.6 C 6.5 2.6 6.5 3.5 6.5 3.5 C 6.5 3.5 6.5 4.4 4.5 4.4 C 2.5 4.4 2.5 3.5 2.5 3.5 C 2.5 3.5 2.5 2.6 4.5 2.6 z "
+         id="path637"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="font-size:12;fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linecap:round;stroke-linejoin:round;fill-opacity:0.12;stroke-opacity:1;stroke-dasharray:none;"
+         d="M 2.5 1.5 C 2.5 1.5 2.5 0.6 4.5 0.6 C 6.5 0.6 6.5 1.5 6.5 1.5 L 6.5 3.5 C 6.5 3.5 6.5 2.6 4.5 2.6 C 2.5 2.6 2.5 3.5 2.5 3.5 z "
+         id="path638"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="font-size:12;fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linecap:round;stroke-linejoin:round;fill-opacity:0.12;stroke-opacity:1;stroke-dasharray:none;"
+         d="M 2.5 1.5 C 2.5 1.5 2.5 2.4 4.5 2.4 C 6.5 2.4 6.5 1.5 6.5 1.5 L 6.5 3.5 C 6.5 3.5 6.5 4.4 4.5 4.4 C 2.5 4.4 2.5 3.5 2.5 3.5 z "
+         id="path639"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.12;stroke-dasharray:none;"
+         d="M 4.5 0.6 C 6.5 0.6 6.5 1.5 6.5 1.5 C 6.5 1.5 6.5 2.4 4.5 2.4 C 2.5 2.4 2.5 1.5 2.5 1.5 C 2.5 1.5 2.5 0.6 4.5 0.6 z "
+         id="path640"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="g641"
+       style="fill:#00ff00;fill-opacity:0.5;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round;">
+      <path
+         style="fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.12;stroke-dasharray:none;"
+         d="M 4.5 2.6 C 6.5 2.6 6.5 3.5 6.5 3.5 C 6.5 3.5 6.5 4.4 4.5 4.4 C 2.5 4.4 2.5 3.5 2.5 3.5 C 2.5 3.5 2.5 2.6 4.5 2.6 z "
+         id="path642"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="font-size:12;fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linecap:round;stroke-linejoin:round;fill-opacity:0.12;stroke-opacity:1;stroke-dasharray:none;"
+         d="M 2.5 1.5 C 2.5 1.5 2.5 0.6 4.5 0.6 C 6.5 0.6 6.5 1.5 6.5 1.5 L 6.5 3.5 C 6.5 3.5 6.5 2.6 4.5 2.6 C 2.5 2.6 2.5 3.5 2.5 3.5 z "
+         id="path643"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="font-size:12;fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linecap:round;stroke-linejoin:round;fill-opacity:0.12;stroke-opacity:1;stroke-dasharray:none;"
+         d="M 2.5 1.5 C 2.5 1.5 2.5 2.4 4.5 2.4 C 6.5 2.4 6.5 1.5 6.5 1.5 L 6.5 3.5 C 6.5 3.5 6.5 4.4 4.5 4.4 C 2.5 4.4 2.5 3.5 2.5 3.5 z "
+         id="path644"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.12;stroke-dasharray:none;"
+         d="M 4.5 0.6 C 6.5 0.6 6.5 1.5 6.5 1.5 C 6.5 1.5 6.5 2.4 4.5 2.4 C 2.5 2.4 2.5 1.5 2.5 1.5 C 2.5 1.5 2.5 0.6 4.5 0.6 z "
+         id="path645"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="g646"
+       transform="translate(12,4)"
+       style="fill:#00ff00;fill-opacity:0.5;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round;">
+      <path
+         style="fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.12;stroke-dasharray:none;"
+         d="M 4.5 2.6 C 6.5 2.6 6.5 3.5 6.5 3.5 C 6.5 3.5 6.5 4.4 4.5 4.4 C 2.5 4.4 2.5 3.5 2.5 3.5 C 2.5 3.5 2.5 2.6 4.5 2.6 z "
+         id="path647"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="font-size:12;fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linecap:round;stroke-linejoin:round;fill-opacity:0.12;stroke-opacity:1;stroke-dasharray:none;"
+         d="M 2.5 1.5 C 2.5 1.5 2.5 0.6 4.5 0.6 C 6.5 0.6 6.5 1.5 6.5 1.5 L 6.5 3.5 C 6.5 3.5 6.5 2.6 4.5 2.6 C 2.5 2.6 2.5 3.5 2.5 3.5 z "
+         id="path648"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="font-size:12;fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linecap:round;stroke-linejoin:round;fill-opacity:0.12;stroke-opacity:1;stroke-dasharray:none;"
+         d="M 2.5 1.5 C 2.5 1.5 2.5 2.4 4.5 2.4 C 6.5 2.4 6.5 1.5 6.5 1.5 L 6.5 3.5 C 6.5 3.5 6.5 4.4 4.5 4.4 C 2.5 4.4 2.5 3.5 2.5 3.5 z "
+         id="path649"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.12;stroke-dasharray:none;"
+         d="M 4.5 0.6 C 6.5 0.6 6.5 1.5 6.5 1.5 C 6.5 1.5 6.5 2.4 4.5 2.4 C 2.5 2.4 2.5 1.5 2.5 1.5 C 2.5 1.5 2.5 0.6 4.5 0.6 z "
+         id="path650"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="g651"
+       transform="translate(4,4)"
+       style="fill:#00ff00;fill-opacity:0.5;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round;">
+      <path
+         style="fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.12;stroke-dasharray:none;"
+         d="M 4.5 2.6 C 6.5 2.6 6.5 3.5 6.5 3.5 C 6.5 3.5 6.5 4.4 4.5 4.4 C 2.5 4.4 2.5 3.5 2.5 3.5 C 2.5 3.5 2.5 2.6 4.5 2.6 z "
+         id="path652"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="font-size:12;fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linecap:round;stroke-linejoin:round;fill-opacity:0.12;stroke-opacity:1;stroke-dasharray:none;"
+         d="M 2.5 1.5 C 2.5 1.5 2.5 0.6 4.5 0.6 C 6.5 0.6 6.5 1.5 6.5 1.5 L 6.5 3.5 C 6.5 3.5 6.5 2.6 4.5 2.6 C 2.5 2.6 2.5 3.5 2.5 3.5 z "
+         id="path653"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="font-size:12;fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linecap:round;stroke-linejoin:round;fill-opacity:0.12;stroke-opacity:1;stroke-dasharray:none;"
+         d="M 2.5 1.5 C 2.5 1.5 2.5 2.4 4.5 2.4 C 6.5 2.4 6.5 1.5 6.5 1.5 L 6.5 3.5 C 6.5 3.5 6.5 4.4 4.5 4.4 C 2.5 4.4 2.5 3.5 2.5 3.5 z "
+         id="path654"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.12;stroke-dasharray:none;"
+         d="M 4.5 0.6 C 6.5 0.6 6.5 1.5 6.5 1.5 C 6.5 1.5 6.5 2.4 4.5 2.4 C 2.5 2.4 2.5 1.5 2.5 1.5 C 2.5 1.5 2.5 0.6 4.5 0.6 z "
+         id="path655"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <path
+       style="font-size:12;fill:#00ffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.07;stroke-opacity:1;stroke-dasharray:none;"
+       d="M 0 -0.5 L 7 6.5 L 7 9.5 L 0 2.5 L 0 -0.5 z "
+       id="path656" />
+    <path
+       style="font-size:12;fill:#00ffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.07;stroke-opacity:1;stroke-dasharray:none;"
+       d="M 7 6.5 L 7 9.5 L 21 9.5 L 21 6.5 L 7 6.5 z "
+       id="path657" />
+    <path
+       style="font-size:12;fill:#00ffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.07;stroke-opacity:1;stroke-dasharray:none;"
+       d="M 0 -0.5 L 7 6.5 L 21 6.5 L 14 -0.5 L 0 -0.5 z "
+       id="path658"
+       sodipodi:nodetypes="cccccc" />
+  </g>
+  <g
+     id="Majority Cell"
+     style="font-size:12;"
+     transform="matrix(1.584822,0,0,1.584822,1.106579,14.05897)">
+    <path
+       style="font-size:12;fill:#00ffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.2471;stroke-opacity:1;stroke-dasharray:none;"
+       d="M 0 2.5 L 7 9.5 L 21 9.5 L 14 2.5 L 0 2.5 z "
+       id="cellLidBot"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="font-size:12;fill:#00ffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;fill-opacity:0.2471;stroke-opacity:1;stroke-dasharray:none;"
+       d="M 0 -0.5 L 0 2.5 L 14 2.5 L 14 -0.5 L 0 -0.5 z "
+       id="cellWallN"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="font-size:12;fill:#00ffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.2471;stroke-opacity:1;stroke-dasharray:none;"
+       d="M 14 -0.5 L 21 6.5 L 21 9.5 L 14 2.5 L 14 -0.5 z "
+       id="cellWallE" />
+    <g
+       id="Dot2"
+       transform="translate(8,0)"
+       style="fill:#00ff00;fill-opacity:0.5;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round;">
+      <path
+         style="fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.5;stroke-dasharray:none;"
+         d="M 4.5 2.6 C 6.5 2.6 6.5 3.5 6.5 3.5 C 6.5 3.5 6.5 4.4 4.5 4.4 C 2.5 4.4 2.5 3.5 2.5 3.5 C 2.5 3.5 2.5 2.6 4.5 2.6 z "
+         id="path619"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="font-size:12;fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linecap:round;stroke-linejoin:round;fill-opacity:0.5;stroke-opacity:1;stroke-dasharray:none;"
+         d="M 2.5 1.5 C 2.5 1.5 2.5 0.6 4.5 0.6 C 6.5 0.6 6.5 1.5 6.5 1.5 L 6.5 3.5 C 6.5 3.5 6.5 2.6 4.5 2.6 C 2.5 2.6 2.5 3.5 2.5 3.5 z "
+         id="path620"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="font-size:12;fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linecap:round;stroke-linejoin:round;fill-opacity:0.5;stroke-opacity:1;stroke-dasharray:none;"
+         d="M 2.5 1.5 C 2.5 1.5 2.5 2.4 4.5 2.4 C 6.5 2.4 6.5 1.5 6.5 1.5 L 6.5 3.5 C 6.5 3.5 6.5 4.4 4.5 4.4 C 2.5 4.4 2.5 3.5 2.5 3.5 z "
+         id="path621"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.5;stroke-dasharray:none;"
+         d="M 4.5 0.6 C 6.5 0.6 6.5 1.5 6.5 1.5 C 6.5 1.5 6.5 2.4 4.5 2.4 C 2.5 2.4 2.5 1.5 2.5 1.5 C 2.5 1.5 2.5 0.6 4.5 0.6 z "
+         id="path622"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="Dot1"
+       style="fill:#00ff00;fill-opacity:0.5;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round;">
+      <path
+         style="fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.5;stroke-dasharray:none;"
+         d="M 4.5 2.6 C 6.5 2.6 6.5 3.5 6.5 3.5 C 6.5 3.5 6.5 4.4 4.5 4.4 C 2.5 4.4 2.5 3.5 2.5 3.5 C 2.5 3.5 2.5 2.6 4.5 2.6 z "
+         id="dotLidBot"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="font-size:12;fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linecap:round;stroke-linejoin:round;fill-opacity:0.5;stroke-opacity:1;stroke-dasharray:none;"
+         d="M 2.5 1.5 C 2.5 1.5 2.5 0.6 4.5 0.6 C 6.5 0.6 6.5 1.5 6.5 1.5 L 6.5 3.5 C 6.5 3.5 6.5 2.6 4.5 2.6 C 2.5 2.6 2.5 3.5 2.5 3.5 z "
+         id="dotBack"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="font-size:12;fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linecap:round;stroke-linejoin:round;fill-opacity:0.5;stroke-opacity:1;stroke-dasharray:none;"
+         d="M 2.5 1.5 C 2.5 1.5 2.5 2.4 4.5 2.4 C 6.5 2.4 6.5 1.5 6.5 1.5 L 6.5 3.5 C 6.5 3.5 6.5 4.4 4.5 4.4 C 2.5 4.4 2.5 3.5 2.5 3.5 z "
+         id="dotFront"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.5;stroke-dasharray:none;"
+         d="M 4.5 0.6 C 6.5 0.6 6.5 1.5 6.5 1.5 C 6.5 1.5 6.5 2.4 4.5 2.4 C 2.5 2.4 2.5 1.5 2.5 1.5 C 2.5 1.5 2.5 0.6 4.5 0.6 z "
+         id="dotLidTop"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="Dot3"
+       transform="translate(12,4)"
+       style="fill:#00ff00;fill-opacity:0.5;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round;">
+      <path
+         style="fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.5;stroke-dasharray:none;"
+         d="M 4.5 2.6 C 6.5 2.6 6.5 3.5 6.5 3.5 C 6.5 3.5 6.5 4.4 4.5 4.4 C 2.5 4.4 2.5 3.5 2.5 3.5 C 2.5 3.5 2.5 2.6 4.5 2.6 z "
+         id="path624"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="font-size:12;fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linecap:round;stroke-linejoin:round;fill-opacity:0.5;stroke-opacity:1;stroke-dasharray:none;"
+         d="M 2.5 1.5 C 2.5 1.5 2.5 0.6 4.5 0.6 C 6.5 0.6 6.5 1.5 6.5 1.5 L 6.5 3.5 C 6.5 3.5 6.5 2.6 4.5 2.6 C 2.5 2.6 2.5 3.5 2.5 3.5 z "
+         id="path625"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="font-size:12;fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linecap:round;stroke-linejoin:round;fill-opacity:0.5;stroke-opacity:1;stroke-dasharray:none;"
+         d="M 2.5 1.5 C 2.5 1.5 2.5 2.4 4.5 2.4 C 6.5 2.4 6.5 1.5 6.5 1.5 L 6.5 3.5 C 6.5 3.5 6.5 4.4 4.5 4.4 C 2.5 4.4 2.5 3.5 2.5 3.5 z "
+         id="path626"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.5;stroke-dasharray:none;"
+         d="M 4.5 0.6 C 6.5 0.6 6.5 1.5 6.5 1.5 C 6.5 1.5 6.5 2.4 4.5 2.4 C 2.5 2.4 2.5 1.5 2.5 1.5 C 2.5 1.5 2.5 0.6 4.5 0.6 z "
+         id="path627"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="Dot4"
+       transform="translate(4,4)"
+       style="fill:#00ff00;fill-opacity:0.5;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-dasharray:none;stroke-linejoin:round;stroke-linecap:round;">
+      <path
+         style="fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.5;stroke-dasharray:none;"
+         d="M 4.5 2.6 C 6.5 2.6 6.5 3.5 6.5 3.5 C 6.5 3.5 6.5 4.4 4.5 4.4 C 2.5 4.4 2.5 3.5 2.5 3.5 C 2.5 3.5 2.5 2.6 4.5 2.6 z "
+         id="path629"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="font-size:12;fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linecap:round;stroke-linejoin:round;fill-opacity:0.5;stroke-opacity:1;stroke-dasharray:none;"
+         d="M 2.5 1.5 C 2.5 1.5 2.5 0.6 4.5 0.6 C 6.5 0.6 6.5 1.5 6.5 1.5 L 6.5 3.5 C 6.5 3.5 6.5 2.6 4.5 2.6 C 2.5 2.6 2.5 3.5 2.5 3.5 z "
+         id="path630"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="font-size:12;fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linecap:round;stroke-linejoin:round;fill-opacity:0.5;stroke-opacity:1;stroke-dasharray:none;"
+         d="M 2.5 1.5 C 2.5 1.5 2.5 2.4 4.5 2.4 C 6.5 2.4 6.5 1.5 6.5 1.5 L 6.5 3.5 C 6.5 3.5 6.5 4.4 4.5 4.4 C 2.5 4.4 2.5 3.5 2.5 3.5 z "
+         id="path631"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="fill:#00ff00;fill-rule:evenodd;stroke:#000000;stroke-opacity:1;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.5;stroke-dasharray:none;"
+         d="M 4.5 0.6 C 6.5 0.6 6.5 1.5 6.5 1.5 C 6.5 1.5 6.5 2.4 4.5 2.4 C 2.5 2.4 2.5 1.5 2.5 1.5 C 2.5 1.5 2.5 0.6 4.5 0.6 z "
+         id="path632"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <path
+       style="font-size:12;fill:#00ffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.2471;stroke-opacity:1;stroke-dasharray:none;"
+       d="M 0 -0.5 L 7 6.5 L 7 9.5 L 0 2.5 L 0 -0.5 z "
+       id="cellWallW" />
+    <path
+       style="font-size:12;fill:#00ffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.2471;stroke-opacity:1;stroke-dasharray:none;"
+       d="M 7 6.5 L 7 9.5 L 21 9.5 L 21 6.5 L 7 6.5 z "
+       id="cellWallS" />
+    <path
+       style="font-size:12;fill:#00ffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.0469;stroke-linejoin:round;stroke-linecap:round;fill-opacity:0.25;stroke-opacity:1;stroke-dasharray:none;"
+       d="M 0 -0.5 L 7 6.5 L 21 6.5 L 14 -0.5 L 0 -0.5 z "
+       id="cellLidTop"
+       sodipodi:nodetypes="cccccc" />
+  </g>
+</svg>

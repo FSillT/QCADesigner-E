@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   id="svg602"
+   sodipodi:version="0.32"
+   width="30pt"
+   height="30pt"
+   xml:space="preserve"
+   sodipodi:docname="puzzle_piece_green.svg"
+   inkscape:version="0.37"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xml="http://www.w3.org/XML/1998/namespace"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   sodipodi:docbase="/home/nix/calgary/source/QCADesigner.v1_9_90/pixmaps"><defs
+   id="defs604" />
+<sodipodi:namedview
+   id="base"
+   inkscape:zoom="16"
+   inkscape:cx="14.9999972"
+   inkscape:cy="14.9999962"
+   inkscape:window-width="1022"
+   inkscape:window-height="716"
+   inkscape:window-x="0"
+   inkscape:window-y="0" />
+<path
+   style="font-size:12;fill:#007f00;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-linejoin:round;stroke-linecap:round;"
+   d="M 7.215024 9.738041 L 7.840024 14.773323 C 7.396474 19.208807 2.840024 11.370464 2.517444 18.281388 C 2.569474 27.898454 7.880344 18.603969 7.840024 22.031388 L 8.386904 27.144795 L 16.314064 27.749634 C 20.183774 28.031892 12.080194 23.377154 19.732664 22.890763 C 27.196124 22.53038 20.340024 27.789956 23.080704 27.749634 L 30.040124 27.144795 L 28.993234 22.020905 C 29.033564 18.149937 34.033564 27.951998 34.920654 18.512841 C 35.650904 9.336584 29.693844 18.918586 28.993234 14.762841 L 28.868254 9.738041 L 21.303984 10.584815 C 16.950414 10.746105 24.020724 15.66546 18.303734 16.232496 C 11.616494 17.487537 16.552224 10.50417 14.537354 10.584815 L 7.215024 9.738041 z "
+   id="path726"
+   sodipodi:nodetypes="ccccccccccccccccc" />
+</svg>

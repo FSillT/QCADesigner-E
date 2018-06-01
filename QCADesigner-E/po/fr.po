@@ -1,0 +1,852 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: tucunare <root@tucunare.mobilecard.dcc.ufmg.br>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "1 nm is"
+msgstr ""
+
+msgid "<big><span foreground=\"red\"><b>Note:</b></span> Right-click the vector table for adding/removing vectors.</big>"
+msgstr ""
+
+msgid "About QCADesigner"
+msgstr "À propos de QCADesigner"
+
+msgid "About..."
+msgstr "À propos..."
+
+msgid "Active"
+msgstr "Actif"
+
+msgid "Add Cell Array"
+msgstr ""
+
+msgid "Add Cell To Design"
+msgstr ""
+
+msgid "Add Layer to Design"
+msgstr ""
+
+msgid "Add Layer"
+msgstr ""
+
+msgid "Add Type 2 Cell To Design"
+msgstr ""
+
+msgid "Add Vector"
+msgstr ""
+
+msgid "Add horizontal or vertical arrays of Type 1 or Type 2 cells to your design."
+msgstr ""
+
+msgid "Adds a layer to your design."
+msgstr ""
+
+msgid "Animate Test Simulation"
+msgstr ""
+
+msgid "Animate"
+msgstr ""
+
+msgid "Array"
+msgstr ""
+
+msgid "Arrow Properties"
+msgstr ""
+
+msgid "Assign Destination To Selection..."
+msgstr ""
+
+msgid "Bistable Options"
+msgstr ""
+
+msgid "Bottom Margin:"
+msgstr ""
+
+msgid "Bring various parts of the design into view by dragging visible parts of the design out of view."
+msgstr ""
+
+msgid "Browse..."
+msgstr "Parcourir..."
+
+msgid "Calculate Ground State"
+msgstr ""
+
+msgid "Calculates and sets the magnification such that the currently topmost layer fits inside the window."
+msgstr ""
+
+msgid "Calculates and sets the magnification such that your design fits inside the window."
+msgstr ""
+
+msgid "Cell Convergence Tolerance:"
+msgstr ""
+
+msgid "Cell Function"
+msgstr "Fonction des cellules"
+
+msgid "Cell Functions..."
+msgstr "Fonctions des cellules..."
+
+msgid "Cell Label:"
+msgstr ""
+
+msgid "Cell"
+msgstr "Cellule"
+
+msgid "Cells"
+msgstr "Cellules"
+
+msgid "Center"
+msgstr "Centrer"
+
+msgid "Center On Pages"
+msgstr "Centrer sur les pages"
+
+msgid "Centimeters"
+msgstr "Centimetre"
+
+msgid "Change the order of layers in your design."
+msgstr ""
+
+msgid "Circuit Convergence Tolerance:"
+msgstr ""
+
+msgid "Click and drag layers to their new location:"
+msgstr ""
+
+msgid "Click and drag your selection to its new location."
+msgstr ""
+
+msgid "Click here, then click on the design to add Type 2 cells to it."
+msgstr ""
+
+msgid "Click here, then click on the design to add cells to it."
+msgstr ""
+
+msgid "Click on a cell to rotate it (repeatedly)."
+msgstr ""
+
+msgid "Click on this button to delete your selection.  Afterwards, click on individual cells to delete them."
+msgstr ""
+
+msgid "Clock 0"
+msgstr "0éme Horloge"
+
+msgid "Clock 1"
+msgstr "1ére Horloge"
+
+msgid "Clock 2"
+msgstr "2éme Horloge"
+
+msgid "Clock 3"
+msgstr "3éme Horloge"
+
+msgid "Clock High:"
+msgstr ""
+
+msgid "Clock Low:"
+msgstr ""
+
+msgid "Clock:"
+msgstr ""
+
+msgid "Clocking"
+msgstr ""
+
+msgid "Close the project file"
+msgstr ""
+
+msgid "Coherence Vector Options"
+msgstr ""
+
+msgid "Command Line"
+msgstr ""
+
+msgid "Command"
+msgstr ""
+
+msgid "Command:"
+msgstr ""
+
+msgid "Common Paper Sizes"
+msgstr ""
+
+msgid "Contents"
+msgstr "Contenu"
+
+msgid "Convergence Tolerance:"
+msgstr ""
+
+msgid "Converts graphs to PostScript and prints them to a file or a printer."
+msgstr ""
+
+msgid "Converts graphs to PostScript and runs the previewer application."
+msgstr ""
+
+msgid "Copy Selection"
+msgstr "Copier Sélection"
+
+msgid "Copy"
+msgstr "Copier"
+
+msgid "Couldn't find pixmap file: %s"
+msgstr "Impossible de trouver le fichier <pixmap> %s"
+
+msgid "Create Block..."
+msgstr ""
+
+msgid "Create Label"
+msgstr ""
+
+msgid "Create Substrate"
+msgstr ""
+
+msgid "Create a mirrored copy of your selection."
+msgstr ""
+
+msgid "Create a new project file"
+msgstr ""
+
+msgid "Creates a new label."
+msgstr ""
+
+msgid "Creates a new rectangular substrate."
+msgstr ""
+
+msgid "Creates a polygonal clocking zone."
+msgstr ""
+
+msgid "Creates an oval or a circular clocking zone."
+msgstr ""
+
+msgid "Custom"
+msgstr ""
+
+msgid "Decrease The Magnification"
+msgstr ""
+
+msgid "Decrease the magnification to get an overall picture."
+msgstr ""
+
+msgid "Default Cell Properties..."
+msgstr ""
+
+msgid "Default Clock"
+msgstr ""
+
+msgid "Default Clock:"
+msgstr ""
+
+msgid "Delete Cells"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Device Voltage:"
+msgstr ""
+
+msgid "Dimension Properties"
+msgstr ""
+
+msgid "Do Not Center"
+msgstr "Ne pas centrer"
+
+msgid "Don't save"
+msgstr "Ne pas enregistrer"
+
+msgid "Dot Convergence Tolerance:"
+msgstr ""
+
+msgid "Down, then over"
+msgstr ""
+
+msgid "Draw Arrow"
+msgstr ""
+
+msgid "Draw Dimensions"
+msgstr ""
+
+msgid "Draw Line"
+msgstr ""
+
+msgid "Draw Rectangle"
+msgstr ""
+
+msgid "Draw Text"
+msgstr ""
+
+msgid "Drawing Layer"
+msgstr ""
+
+msgid "Drawing"
+msgstr ""
+
+msgid "Electron Lifetime:"
+msgstr "Longevité de l'électron:"
+
+msgid "Enter Grid Spacing [nm]"
+msgstr ""
+
+msgid "Enter Scale Factor"
+msgstr ""
+
+msgid "Export Block"
+msgstr ""
+
+msgid "Extents"
+msgstr ""
+
+msgid "Failed to create file \"%s\" !"
+msgstr ""
+
+msgid "Failed to open file \"%s\"!"
+msgstr ""
+
+msgid "File Name:"
+msgstr ""
+
+msgid "File"
+msgstr "Fichier"
+
+msgid "Fit Design To Window"
+msgstr ""
+
+msgid "Fit Layer To Window"
+msgstr ""
+
+msgid "Fit"
+msgstr ""
+
+msgid "Fixed Polarization"
+msgstr ""
+
+msgid "Fixed"
+msgstr ""
+
+msgid "Function"
+msgstr "Fonction"
+
+# msgid "Gamma:"
+# msgstr ""
+msgid "Graph Options"
+msgstr ""
+
+msgid "Grid Spacing [nm]:"
+msgstr ""
+
+msgid "Grid Spacing"
+msgstr ""
+
+msgid "Grid Spacing:"
+msgstr ""
+
+msgid "Hidden"
+msgstr ""
+
+msgid "Horizontal:"
+msgstr ""
+
+msgid "Host Name And Port"
+msgstr ""
+
+msgid "I/O"
+msgstr ""
+
+msgid "Import Block"
+msgstr ""
+
+msgid "Import Block..."
+msgstr ""
+
+msgid "Inches"
+msgstr "Pouces (2.54cm)"
+
+msgid "Increase The Magnification"
+msgstr ""
+
+msgid "Increase the magnification so you may concentrate on specific parts of the design."
+msgstr ""
+
+msgid "Increase the magnification so you may concentrate on specific parts of the graph."
+msgstr ""
+
+msgid "Increment Cell Clocks"
+msgstr ""
+
+msgid "Input Cell Current:"
+msgstr ""
+
+# msgid "Input"
+# msgstr ""
+msgid "Input/Output"
+msgstr ""
+
+msgid "Insert Vector After"
+msgstr ""
+
+msgid "Label Properties"
+msgstr ""
+
+msgid "Label"
+msgstr ""
+
+msgid "Landscape"
+msgstr "Paysage"
+
+msgid "Layer Description:"
+msgstr ""
+
+msgid "Layer Properties"
+msgstr ""
+
+msgid "Layer Status:"
+msgstr ""
+
+msgid "Layer Type:"
+msgstr ""
+
+msgid "Layer"
+msgstr ""
+
+msgid "Layers"
+msgstr ""
+
+msgid "Left Margin:"
+msgstr ""
+
+msgid "Line Properties"
+msgstr ""
+
+msgid "Lists the layers in the current design and allows you to switch between them."
+msgstr ""
+
+msgid "Logging Properties"
+msgstr ""
+
+msgid "Main Cell Layer"
+msgstr ""
+
+msgid "Main Clocking Layer"
+msgstr ""
+
+msgid "Makes a copy of your selection."
+msgstr ""
+
+msgid "Margins"
+msgstr ""
+
+msgid "Maximum Iterations Per Sample:"
+msgstr ""
+
+msgid "Maximum Loops Per Cell:"
+msgstr ""
+
+msgid "Maximum Loops Per Dot:"
+msgstr ""
+
+msgid "Measure Distance"
+msgstr ""
+
+msgid "Measurement Preferences"
+msgstr ""
+
+msgid "Mirror Selection"
+msgstr ""
+
+msgid "Mirror"
+msgstr ""
+
+msgid "Modify Cell Function"
+msgstr ""
+
+msgid "Modify a cell's function (Normal/Input/Output/Fixed)"
+msgstr ""
+
+msgid "Modify the function of one of the cells (Input/Output/Fixed)."
+msgstr ""
+
+msgid "Move Selection"
+msgstr ""
+
+msgid "Move"
+msgstr ""
+
+msgid "Nonlinear Approximation Properties"
+msgstr ""
+
+msgid "Normal Cell"
+msgstr ""
+
+msgid "Note: If you change the paper size, please also have a look at the margins. They may have changed as a result."
+msgstr ""
+
+msgid "Note: The PostScript data will be piped to your specified command. Any valid command line is accepted."
+msgstr ""
+
+msgid "Number Of Samples:"
+msgstr ""
+
+msgid "Number of Pages"
+msgstr ""
+
+msgid "Open Design"
+msgstr ""
+
+msgid "Open a project file"
+msgstr ""
+
+msgid "Options"
+msgstr ""
+
+msgid "Orientation"
+msgstr "Orientation de la page"
+
+msgid "Output"
+msgstr ""
+
+msgid "Oval Clocking Zone"
+msgstr ""
+
+msgid "Oval"
+msgstr ""
+
+msgid "Over, then down"
+msgstr ""
+
+msgid "Pan Design"
+msgstr ""
+
+msgid "Pan"
+msgstr ""
+
+msgid "Paper Height:"
+msgstr "Hauteur du papier:"
+
+msgid "Paper Size"
+msgstr "Taille du papier"
+
+msgid "Paper Width:"
+msgstr "Largeur du papier:"
+
+msgid "Pause Simulation"
+msgstr ""
+
+msgid "Please Select PostScript Viewer"
+msgstr ""
+
+msgid "Please Select Web Browser"
+msgstr ""
+
+msgid "Please select cell to edit..."
+msgstr ""
+
+msgid "Please select which traces to plot:"
+msgstr ""
+
+msgid "Polarization"
+msgstr ""
+
+msgid "Polygon"
+msgstr ""
+
+msgid "Polygonal Clocking Zone"
+msgstr ""
+
+msgid "Portrait"
+msgstr ""
+
+msgid "Preferred Units:"
+msgstr ""
+
+msgid "Preview the print layout"
+msgstr ""
+
+msgid "Print Colours"
+msgstr ""
+
+msgid "Print Graphs"
+msgstr ""
+
+msgid "Print Order"
+msgstr ""
+
+msgid "Print Preview"
+msgstr ""
+
+msgid "Print To"
+msgstr ""
+
+msgid "Print"
+msgstr "Imprimer"
+
+msgid "Printed Objects"
+msgstr "Objets Imprimés"
+
+msgid "Printer Setup"
+msgstr ""
+
+msgid "Printer"
+msgstr ""
+
+msgid "Quality"
+msgstr ""
+
+msgid "Quit QCADesigner"
+msgstr ""
+
+msgid "Radius of Effect [nm]:"
+msgstr ""
+
+msgid "Radius of Effect:"
+msgstr ""
+
+msgid "Random Fault Setup..."
+msgstr ""
+
+msgid "Rectangle Properties"
+msgstr ""
+
+msgid "Relative Permittivity:"
+msgstr ""
+
+msgid "Remove Layer from Design"
+msgstr ""
+
+msgid "Remove Layer"
+msgstr ""
+
+msgid "Remove Vector"
+msgstr ""
+
+msgid "Remove a layer from your design."
+msgstr ""
+
+msgid "Reorder Layers"
+msgstr ""
+
+msgid "Reset Simulation"
+msgstr ""
+
+msgid "Reset Zoom and Range"
+msgstr ""
+
+msgid "Reset"
+msgstr ""
+
+msgid "Right Margin:"
+msgstr ""
+
+msgid "Rotate Cell"
+msgstr ""
+
+msgid "Rotate Selection"
+msgstr ""
+
+msgid "Rotate"
+msgstr ""
+
+msgid "Save As"
+msgstr "Enregistrer sous"
+
+msgid "Save Output To File"
+msgstr ""
+
+msgid "Save current project"
+msgstr ""
+
+msgid "Save project file as ..."
+msgstr ""
+
+msgid "Scale All Cells In Design..."
+msgstr ""
+
+msgid "Scale Factor:"
+msgstr ""
+
+msgid "Scale"
+msgstr ""
+
+msgid "Search"
+msgstr "Rechercher"
+
+msgid "Select And Manipulate Design"
+msgstr ""
+
+msgid "Select Clock..."
+msgstr ""
+
+msgid "Select Command"
+msgstr ""
+
+msgid "Select File"
+msgstr ""
+
+msgid "Select Visible Traces"
+msgstr ""
+
+msgid "Select the clock"
+msgstr ""
+
+msgid "Select which traces you would like to see/preview."
+msgstr ""
+
+msgid "Select"
+msgstr ""
+
+msgid "Set the Zoom to 100% and show the full range."
+msgstr ""
+
+msgid "Show Grid"
+msgstr ""
+
+msgid "Show Toolbar Icons"
+msgstr ""
+
+msgid "Simulation _Engine Setup..."
+msgstr ""
+
+msgid "Simulation Results"
+msgstr ""
+
+msgid "Simulation T_ype Setup..."
+msgstr ""
+
+msgid "Snap Properties..."
+msgstr ""
+
+msgid "Snap To Grid"
+msgstr ""
+
+msgid "Specify the default clock for future cells."
+msgstr ""
+
+msgid "Split Current QCA Options"
+msgstr ""
+
+msgid "Start Simulation"
+msgstr ""
+
+msgid "Stop Simulation"
+msgstr ""
+
+msgid "Substrate"
+msgstr ""
+
+msgid "Temperature:"
+msgstr ""
+
+msgid "Text Properties"
+msgstr ""
+
+msgid "Text:"
+msgstr ""
+
+msgid "The file \"%s\" is not a regular file.  Maybe it's a directory, or a device file.  Please choose a regular file."
+msgstr ""
+
+msgid "This button allows you to manipulate your design."
+msgstr ""
+
+msgid "Top Margin:"
+msgstr ""
+
+msgid "Traces..."
+msgstr ""
+
+msgid "Translate Selection"
+msgstr ""
+
+msgid "Translate your selection horizontally and/or vertically."
+msgstr ""
+
+msgid "Translate"
+msgstr ""
+
+msgid "Type 2"
+msgstr ""
+
+msgid "Unnamed Layer"
+msgstr "<Layer> Sans Titre"
+
+msgid "Untitled"
+msgstr "Sans Titre"
+
+msgid "Vector Table Operations"
+msgstr ""
+
+msgid "Vector Table Setup"
+msgstr ""
+
+msgid "Vertical:"
+msgstr ""
+
+msgid "Visible"
+msgstr ""
+
+msgid "Window Properties"
+msgstr ""
+
+msgid "You have made changes to your design.  Closing your design will discard those changes.  Save first ?"
+msgstr ""
+
+msgid "You have made changes to your design.  Opening another design will discard those changes. Save first ?"
+msgstr ""
+
+msgid "You have made changes to your design.  Quitting QCADesigner will discard those changes.  Save first ?"
+msgstr ""
+
+msgid "You have made changes to your design.  Starting a new design will discard those changes.  Save first ?"
+msgstr ""
+
+msgid "Zoom Extents"
+msgstr ""
+
+msgid "Zoom In"
+msgstr ""
+
+msgid "Zoom Layer Extents"
+msgstr ""
+
+msgid "Zoom Out"
+msgstr ""
+
+msgid "_Draw"
+msgstr ""
+
+msgid "_Edit"
+msgstr "_Édition"
+
+msgid "_File"
+msgstr "_Fichier"
+
+msgid "_Help"
+msgstr "_Aide"
+
+msgid "_Recent Files"
+msgstr ""
+
+msgid "_Simulation"
+msgstr ""
+
+msgid "_Tools"
+msgstr "_Outils"
+
+msgid "_View"
+msgstr "_Affichage"
+
+msgid "cm"
+msgstr ""
+
+msgid "page(s) tall"
+msgstr ""
+
+msgid "page(s) wide"
+msgstr ""
+

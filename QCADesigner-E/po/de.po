@@ -1,0 +1,957 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: tucunare <root@tucunare.mobilecard.dcc.ufmg.br>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "1 nm is"
+msgstr "1 nm ist"
+
+msgid "About..."
+msgstr "Info..."
+
+msgid "About QCADesigner"
+msgstr "QCADesigner Info"
+
+msgid "Active"
+msgstr "Aktiv"
+
+msgid "Add Cell Array"
+msgstr "Zellreihe zufügen"
+
+msgid "Add Cell To Design"
+msgstr "Zelle zum Design zufügen"
+
+msgid "Add horizontal or vertical arrays of cells to your design."
+msgstr "Fügen Sie horizontale oder vertikale Zellreihen zum Design hinzu."
+
+msgid "Add Layer"
+msgstr "Ebene hinzufügen"
+
+msgid "Add Layer to Design"
+msgstr "Ebene zum Design hinzufügen"
+
+msgid "Adds a layer to your design."
+msgstr "Fügt einen Ebene zum Design hinzu."
+
+msgid "Add Vector"
+msgstr "Vektor zufügen"
+
+msgid "Alternate Drawing Style"
+msgstr ""
+
+msgid "Alt Style"
+msgstr ""
+
+msgid "An autosave file more recent than the file you are opening seems to be present.  Load it instead ?"
+msgstr ""
+
+msgid "Animate"
+msgstr "Animieren"
+
+msgid "Array"
+msgstr "Reihe"
+
+msgid "<b>Destination Layer</b>"
+msgstr ""
+
+msgid "<big><span foreground=\"red\"><b>Note:</b></span> Right-click the vector table for adding/removing vectors.</big>"
+msgstr "<big><span foreground=\"red\"><b>Bemerkung:</b></span> Auf den Vektor rechtsklicken um Vektoren zuzufügen/entfernen.</big>"
+
+msgid "<b>Import</b>"
+msgstr ""
+
+msgid "Binary"
+msgstr "Binär"
+
+msgid "Bistable Options"
+msgstr ""
+
+# msgid "Bistable simulation:"
+# msgstr ""
+msgid "Bottom Margin:"
+msgstr "Unterer Rand:"
+
+# msgid "Bring various parts of the design into view by dragging visible parts of the design out of view."
+# msgstr ""
+msgid "Browse..."
+msgstr "Datei auswählen..."
+
+msgid "<b>Source Layer</b>"
+msgstr ""
+
+msgid "_Bus Layout..."
+msgstr "_Busauslegung..."
+
+msgid "Bus Layout"
+msgstr "Busauslegung"
+
+msgid "Bus Name:"
+msgstr "Busname:"
+
+msgid "Calculates and sets the magnification such that the currently topmost layer fits inside the window."
+msgstr "Berechnet und setzt den Vergrösserungsfaktor so dass die zur Zeit oberste Ebene ins Fenster passt"
+
+msgid "Calculates and sets the magnification such that your design fits inside the window."
+msgstr "Berechnet und setzt den Vergrösserungsfactor so dass ihr Design ins Fenster passt."
+
+msgid "Cannot print without having a %s to print to!"
+msgstr ""
+
+msgid "Cannot simulate with an empty vector table !"
+msgstr "Kann mit leerer Vektortabelle nicht simulieren !"
+
+msgid ""
+"Cannot %s the layer at this time.\n"
+"\n"
+"Please ensure that your selection can be dropped before attempting to %s a layer."
+msgstr ""
+"Kann zur Zeit Ebene nicht %s.\n"
+"\n"
+"Die Auswahl muss man fallen lassen können, ehe man die Ebene %s versucht."
+
+msgid "Cannot zoom to the design extents, because the design is empty"
+msgstr "Kann auf Gesamtdesign nicht zoomen, weil es leer ist"
+
+msgid "Cannot zoom to the layer extents, because the design is empty"
+msgstr "Kann auf die Ebene nicht zoomen, weil sie leer ist"
+
+msgid "Cell"
+msgstr "Zelle"
+
+msgid "Cell Clock"
+msgstr "Zelltakt"
+
+msgid "Cell Drawing Mode"
+msgstr ""
+
+msgid "Cell Function"
+msgstr "Zellfunktion"
+
+msgid "Cell Function:Normal/Input/Output/Fixed"
+msgstr "Zellfunktion:Keine Fuktion/Input/Output/Fix"
+
+msgid "Cell Height:"
+msgstr "Zellhöhe:"
+
+msgid "Cell Label:"
+msgstr "Zellbeschriftung:"
+
+msgid "Cell Label"
+msgstr "Zellbeschriftung"
+
+msgid "Cell Polarization"
+msgstr "Zellpolarisation"
+
+msgid "Cell Width:"
+msgstr "Zellbreite:"
+
+msgid "Cells"
+msgstr "Zellen"
+
+msgid "Cells And Buses"
+msgstr "Zellen und Busse"
+
+msgid "Center"
+msgstr "Zentrieren"
+
+msgid "Center On Pages"
+msgstr "Auf den Seiten zentrieren"
+
+msgid "Centimeters"
+msgstr "Zentimeter"
+
+msgid "Change the order of layers in your design."
+msgstr "Die Ordnung der Ebenen im Design verändern."
+
+# msgid "Click here, then click on the design to add cells to it."
+# msgstr ""
+msgid "Click on a cell to rotate it (repeatedly)."
+msgstr "Klicken sie auf eine Zelle um sie (mehrmals) zu rotieren"
+
+msgid "Clock:"
+msgstr "Takt:"
+
+msgid "Clock 0"
+msgstr "Takt 0"
+
+msgid "Clock 1"
+msgstr "Takt 1"
+
+msgid "Clock 2"
+msgstr "Takt 2"
+
+msgid "Clock 3"
+msgstr "Takt 3"
+
+msgid "Clock Amplitude Factor:"
+msgstr ""
+
+msgid "Clock High:"
+msgstr "Takt Spannung (hoch):"
+
+msgid "Clocking"
+msgstr "Takt"
+
+msgid "Clock Low:"
+msgstr "Takt Spannung (niedrig):"
+
+msgid "Clock Shift:"
+msgstr ""
+
+msgid "Close"
+msgstr "Schließen"
+
+msgid "Close simulation results window."
+msgstr "Simulationsresultatfenster schließen."
+
+msgid "Close the project file"
+msgstr "Projektdatei schließen"
+
+msgid "Close Window"
+msgstr "Fenster Schließen"
+
+# msgid "cm"
+# msgstr ""
+msgid "Coherence Vector Options"
+msgstr ""
+
+msgid "Command:"
+msgstr "Befehl:"
+
+msgid "Command"
+msgstr "Befehl"
+
+msgid "Command Line"
+msgstr "Kommandozeile"
+
+msgid "Common Paper Sizes"
+msgstr "Gebräuchliche Papiergrössen"
+
+msgid "Contents"
+msgstr "Inhalt"
+
+msgid "Contributers:"
+msgstr "Mitwirkende:"
+
+msgid "Convergence Tolerance:"
+msgstr ""
+
+msgid "Converts graphs to PostScript and prints them to a file or a printer."
+msgstr "Konvertiert Graphen in PostScript und speichert sie in eine Datei oder sendet sie an einen Drucker."
+
+msgid "Converts graphs to PostScript and runs the previewer application."
+msgstr "Konvertiert Graphen in PostScript und startet die Vorschau."
+
+msgid "Copy"
+msgstr "Kopieren"
+
+msgid "Copy Selection"
+msgstr "Auswahl kopieren"
+
+msgid "Could not locate file \"%s\"."
+msgstr "Konnte Datei \"%s\" nicht finden"
+
+msgid "Couldn't find pixmap file: %s"
+msgstr "Konnte Bilddatei %s nicht finden"
+
+msgid "Create a mirrored copy of your selection."
+msgstr "Erzeugen Sie eine Spiegelkopie von ihrer Auswahl."
+
+msgid "Create a new project file"
+msgstr "Eine neue Projektdatei erzeugen"
+
+msgid "_Create Block..."
+msgstr "_Erzeuge Block..."
+
+msgid "Create Bus"
+msgstr "Bus Erzeugen"
+
+msgid "Create Label"
+msgstr "Beschriftung erzeugen"
+
+msgid "Create New..."
+msgstr "Neu erzeugen..."
+
+msgid "Creates a new label."
+msgstr "Eine neue Beschriftung erzeugen."
+
+msgid "Creates a new rectangular substrate."
+msgstr "Ein neues rechteckiges Substrat erzeugen."
+
+msgid "Create Substrate"
+msgstr "Substrat erzeugen"
+
+msgid "Crossover"
+msgstr "Überführung"
+
+msgid "Custom"
+msgstr "Maßgeschneidert"
+
+msgid "deactivate"
+msgstr "deaktivieren"
+
+msgid "Decimal"
+msgstr "Dezimal"
+
+msgid "Decrease The Magnification"
+msgstr "Vergrösserung verringern"
+
+msgid "Decrease the magnification to get an overall picture."
+msgstr "Verringern Sie die Vergrösserung um das ganze Bild zu sehen."
+
+msgid "Default Clock:"
+msgstr "Standardtakt:"
+
+msgid "Default Clock"
+msgstr "Standardtakt"
+
+msgid "Delete Bus"
+msgstr "Bus Löschen"
+
+msgid "Display honeycomb values in binary."
+msgstr "Waben binär anzeigen."
+
+msgid "Display honeycomb values in decimal."
+msgstr "Waben dezimal anzeigen."
+
+msgid "Display honeycomb values in hexadecimal."
+msgstr "Waben hexadezimal anzeigen."
+
+msgid "Distance"
+msgstr "Distanz"
+
+msgid "Document Options"
+msgstr "Dokumenteinstellungen"
+
+# msgid "Dot Diameter:"
+# msgstr ""
+msgid "Do Not Center"
+msgstr "Nicht zentrieren"
+
+msgid "Don't save"
+msgstr "Nicht speichern"
+
+msgid "Down, then over"
+msgstr "Herunter, dann hinüber"
+
+msgid "Download free version of QCADesigner from:"
+msgstr "Downloaden Sie QCADesigner frei(nicht nur gratis) von:"
+
+msgid "Drag and drop layers to their new location:"
+msgstr "Ebene an dessen neue Position ziehen und fallen lassen:"
+
+msgid "Drawing"
+msgstr "Zeichnung"
+
+msgid "Drawing Layer"
+msgstr "Zeichnungsebene"
+
+msgid "_Edit"
+msgstr "_Bearbeiten"
+
+msgid "Enter Scale Factor"
+msgstr "Maßstabfaktor Eingeben"
+
+msgid "Exhaustive Verification"
+msgstr "Vollständige Verifizierung"
+
+# msgid "Export Block"
+# msgstr ""
+msgid "Extents"
+msgstr "Gesamt"
+
+msgid "Failed to create file \"%s\" !"
+msgstr "Konnte Datei \"%s\" nicht erzeugen !"
+
+msgid "Failed to open autosave file!"
+msgstr "Konnte Selbstspeicherdatei nicht öffnen!"
+
+msgid "Failed to open file \"%s\"!"
+msgstr "Konnte Datei \"%s\" nicht öffnen!"
+
+msgid "Failed to open simulation data file %s !\n"
+msgstr "Konnte Simulationsresultatdatei %s nicht öffnen!\n"
+
+msgid "_File"
+msgstr "_Datei"
+
+msgid "File"
+msgstr "Datei"
+
+msgid "File:"
+msgstr "Datei:"
+
+msgid "file"
+msgstr "Datei"
+
+msgid "File Name:"
+msgstr "Dateiname:"
+
+msgid "File opened in %.2lf seconds\n"
+msgstr "Datei in %.2lf Sekunden geöffnet\n"
+
+msgid "Fit"
+msgstr "Einpassen"
+
+msgid "Fit Design To Window"
+msgstr "Design in das Fenster einpassen"
+
+msgid "Fit Layer To Window"
+msgstr "Ebene in das Fenster einpassen"
+
+msgid "Fixed"
+msgstr "Fest"
+
+msgid "Fixed Polarization"
+msgstr "Festpolarisiert"
+
+msgid "Grid Spacing:"
+msgstr "Rasterabstand:"
+
+msgid "Grid Spacing"
+msgstr "Rasterabstand"
+
+msgid "Grid Spacing [nm]"
+msgstr "Rasterabstand [nm]"
+
+msgid "Group individual input and output cells into buses."
+msgstr "Einzelne input und output Zellen in Busse einteilen."
+
+msgid "_Help"
+msgstr "_Hilfe"
+
+msgid "Hex"
+msgstr ""
+
+msgid "Hidden"
+msgstr "Unsichtbar"
+
+msgid "hide"
+msgstr "ausblenden"
+
+msgid "_Hide All But The Selected Layer"
+msgstr "_Ausschließlich ausgewählte Ebene anzeigen"
+
+msgid "Horizontal:"
+msgstr ""
+
+msgid "Horizontally"
+msgstr "Horizontal"
+
+msgid "_Import Block..."
+msgstr "Block _Importieren..."
+
+msgid "Import Block"
+msgstr "Block Importieren"
+
+msgid "Inactive"
+msgstr "Inaktiv"
+
+msgid "Inches"
+msgstr "Zoll"
+
+msgid "Increase The Magnification"
+msgstr "Vergrösserungsfaktor erhöhen"
+
+msgid "Increase the magnification so you may concentrate on specific parts of the design."
+msgstr "Vergrösserungsfaktor erhöhen um sich auf bestimmte Teile des Designs zu konzentrieren."
+
+msgid "I_ncrement Cell Clocks"
+msgstr "_Zelltakt erhöhen"
+
+# msgid "Input"
+# msgstr ""
+# msgid "Input/Output"
+# msgstr ""
+msgid "Insert Before"
+msgstr "Einfügung Bevor"
+
+msgid "Insert Vector After"
+msgstr "Vektoreinfügung Nach"
+
+# msgid "I/O"
+# msgstr ""
+msgid "Label"
+msgstr "Beschriftung"
+
+msgid "Label Properties"
+msgstr "Beschriftungseigenschaften"
+
+msgid "Landscape"
+msgstr "Querformat"
+
+msgid "Layer"
+msgstr "Ebene"
+
+msgid "Layer Description:"
+msgstr "Ebenebeschriftung:"
+
+msgid "Layer Order"
+msgstr "Reihenfolge der Ebenen"
+
+msgid "Layer Properties..."
+msgstr "Eigenschaften der Ebene..."
+
+msgid "Layer Properties"
+msgstr "Eigenschaften der Ebene"
+
+msgid "Layers"
+msgstr "Ebenen"
+
+msgid "Layer Separation:"
+msgstr "Ebeneabstand:"
+
+msgid "Layer Status:"
+msgstr "Ebenestatus:"
+
+msgid "Layer Type:"
+msgstr "Ebenetyp:"
+
+msgid "Left Margin:"
+msgstr "Linker Rand:"
+
+msgid "Lists the layers in the current design and allows you to switch between them."
+msgstr "Listet die Ebenen im aktuellen Design und erlaubt zwischen ihnen herumzuschalten."
+
+msgid "_Load Output From File..."
+msgstr "Simulationsresultate von Datei laden..."
+
+msgid "Logic Thresholds"
+msgstr "Logikgrenzwerte"
+
+msgid "Lower Threshold [0]:"
+msgstr "Unterer Grenzwert [0]:"
+
+msgid "Main Cell Layer"
+msgstr "Hauptzellenebene"
+
+msgid "Make Cell(s) Less Significant"
+msgstr "Zelle(n) niedrigerwertig machen"
+
+msgid "Make Cell(s) More Significant"
+msgstr "Zelle(n) höherwertig machen"
+
+msgid "Makes a copy of your selection."
+msgstr "Kopiert Ihre Auswahl"
+
+msgid "Map Layers"
+msgstr "Ebenen vereinen"
+
+msgid "Margins"
+msgstr "Ränder"
+
+msgid "Maximum Iterations Per Sample:"
+msgstr "Maximale Anzahl der Interazionen pro Probe:"
+
+msgid "Measure Distance"
+msgstr "Distanz messen"
+
+msgid "Measure the distance from a given point"
+msgstr "Distanz von einem bestimmten Punkt messen"
+
+msgid "Mirror"
+msgstr "Spiegeln"
+
+msgid "Mirror Selection"
+msgstr "Auswahl spiegeln"
+
+msgid "Modify the settings for the current layer."
+msgstr "Die Eigenschafter der aktuellen Ebene verändern."
+
+msgid "Move Bus Down"
+msgstr ""
+
+msgid "Move Bus Up"
+msgstr ""
+
+msgid "New Layer"
+msgstr "Neues Layer"
+
+msgid "Normal"
+msgstr "Einfach"
+
+msgid "Normal Cell"
+msgstr "Einfache Zelle"
+
+msgid "Note: If you change the paper size, please also have a look at the margins. They may have changed as a result."
+msgstr "Bemerkung: Wenn Sie die Papiergrösse verändern, bitte überprüfen Sie auch die Ränder. Sie könnten sich folge dessen geändert haben."
+
+msgid "Number of Pages"
+msgstr "Anzahl der Seiten"
+
+msgid "Number Of Samples:"
+msgstr "Anzahl der Proben:"
+
+msgid "Object Properties"
+msgstr "Objekteinstellungen"
+
+msgid "Once deleted, a layer cannot be undeleted. Do you really want to delete layer \"%s\"?"
+msgstr "Wenn gelöscht, kann eine Ebene nicht wiederhergestellt werden. Ebene \"%s\" wirklich löschen?"
+
+msgid "Open"
+msgstr "Öffnen"
+
+msgid "Open and display another set of simulation results."
+msgstr "Andere Simulationsresultate öffnen und anzeigen."
+
+msgid "Open a project file"
+msgstr "Projektdatei öffnen"
+
+msgid "Open Design"
+msgstr "Design Öffnen"
+
+msgid "Opening File:"
+msgstr "Öffne Datei:"
+
+msgid "Open Simulation Results"
+msgstr "Simulationsresultate öffnen"
+
+msgid "Options"
+msgstr "Optionen"
+
+msgid "Orientation"
+msgstr "Ausrichtung"
+
+# msgid "Output"
+# msgstr ""
+msgid "Over, then down"
+msgstr "Hinüber, dann herunter"
+
+msgid "page(s) tall"
+msgstr "Seite(n) hoch"
+
+msgid "page(s) wide"
+msgstr "Seite(n) breit"
+
+msgid "Pan"
+msgstr "Schwenken"
+
+msgid "Pan Design"
+msgstr "Design schwenken"
+
+msgid "Paper Height:"
+msgstr "Papierhöhe:"
+
+msgid "Paper Size"
+msgstr "Papiergrösse"
+
+msgid "Paper Width:"
+msgstr "Papierbreite:"
+
+msgid "pipe"
+msgstr ""
+
+# msgid "Please Select PostScript Viewer"
+# msgstr ""
+# msgid "Please Select Web Browser"
+# msgstr ""
+msgid "Points"
+msgstr ""
+
+msgid "Polarization"
+msgstr "Polarisation"
+
+msgid "Portrait"
+msgstr "Hochformat"
+
+msgid "Preferred Units:"
+msgstr "Bevorzugte Einheiten:"
+
+# msgid "Preview the print layout"
+# msgstr ""
+msgid "Print"
+msgstr "Drucken"
+
+msgid "Print Colours"
+msgstr "Farbdruck"
+
+msgid "Printed Objects"
+msgstr "Drucken"
+
+msgid "Printer"
+msgstr "Drucker"
+
+msgid "Printer Setup"
+msgstr "Druckereinstellungen"
+
+msgid "Print Graphs"
+msgstr "Graphe Drucken"
+
+msgid "Print Order"
+msgstr "Druckrichtung"
+
+msgid "Print Preview"
+msgstr "Druckvorschau"
+
+msgid "Print To"
+msgstr "Drucke nach"
+
+msgid "Protected by Copright 2005 K. Walus"
+msgstr "Copright 2005 K. Walus"
+
+msgid "Quit QCADesigner"
+msgstr "QCADesigner Beenden"
+
+msgid "Radius of Effect:"
+msgstr "Effektradius:"
+
+msgid "Radius of Effect [nm]:"
+msgstr "Effektradius [nm]:"
+
+msgid "Randomize Simulation Order"
+msgstr "Zufällige Simulationsordnung"
+
+msgid "_Recent Files"
+msgstr "_Zuletzt geöffnete Dateien"
+
+msgid "Relative Permittivity:"
+msgstr "Relative Dielektrizitätskonstante:"
+
+msgid "Relaxation Time:"
+msgstr ""
+
+msgid "Remove a layer from your design."
+msgstr "Ebene von Ihrem Design entfernen."
+
+msgid "Remove Layer"
+msgstr "Ebene Entfernen"
+
+msgid "Remove Layer from Design"
+msgstr "Ebene vom Design entfernen"
+
+msgid "Remove Vector"
+msgstr "Vektor entfernen"
+
+msgid "Reorder Layers"
+msgstr "Ebenen Umordnen"
+
+msgid "Reset Zoom"
+msgstr "Zoom zurückstellen"
+
+msgid "Right Margin:"
+msgstr "Rechter Rand:"
+
+msgid "Rotate"
+msgstr "Rotieren"
+
+msgid "Rotate Cell"
+msgstr "Zelle rotieren"
+
+msgid "_Rotate Selection"
+msgstr "Auswahl _Rotieren"
+
+msgid "Sample"
+msgstr "Probe"
+
+msgid "Save"
+msgstr "Speichern"
+
+msgid "Save As"
+msgstr "Speichern Unter"
+
+msgid "Save current project"
+msgstr "Aktuelles Projekt speichern"
+
+msgid "Save Output To _File..."
+msgstr "Output zur _Datei speichern..."
+
+msgid "Save project file as ..."
+msgstr "Projekt speichern unter ..."
+
+msgid "Save Simulation Results"
+msgstr "Simulationsresultate speichern"
+
+msgid "Save the displayed simulation results."
+msgstr "Die angezeigten Simulationsresultate speichern."
+
+msgid "Scale"
+msgstr "Maßstab"
+
+msgid "_Scale All Cells In Design..."
+msgstr "Alle Zellen im Design _maßstäblich vergrössern/verkleinern..."
+
+msgid "Scale Factor:"
+msgstr "Maßstabfaktor:"
+
+msgid "Select"
+msgstr "Auswählen"
+
+msgid "Select And Manipulate Design"
+msgstr "Design auswählen und manipulieren"
+
+msgid "Select Command"
+msgstr "Kommando auswählen"
+
+msgid "Select File"
+msgstr "Datei auswählen"
+
+msgid "Set Simulation Type"
+msgstr "Simulationstyp auswählen"
+
+msgid "Set Thresholds"
+msgstr "Grenzwerte einstellen"
+
+msgid "Set thresholds for interpreting logical bits from polarizations."
+msgstr "Grenzwerte einstellen um Polarisationen als logische Bits auszuwerten."
+
+msgid "Show Toolbar Icons"
+msgstr "Werkseugleiste icons anzeigen"
+
+msgid "Show Values As Binary"
+msgstr "Werte binär anzeigen"
+
+msgid "Show Values As Decimal"
+msgstr "Werte dezimal anzeigen"
+
+msgid "Show Values As Hexadecimal"
+msgstr "Werte hexadezimal anzeigen"
+
+# msgid "_Simulation"
+# msgstr ""
+# msgid "Simulation _Engine Setup..."
+# msgstr ""
+msgid "Simulation found %d inputs %d outputs %d total cells\n"
+msgstr "Simulation: %d inputs, %d outputs, und %d gesamte Zellen gefunden\n"
+
+msgid "Simulation Results..."
+msgstr "Simulatioinsresultate"
+
+msgid "Simulation Results"
+msgstr "Simulatioinsresultate"
+
+msgid "Simulation T_ype Setup..."
+msgstr "Einstellungen des Simulationstyps..."
+
+msgid "Snap To Grid"
+msgstr "Einrasten"
+
+msgid "<span foreground=\"red\">Warning:</span> The bus must have a name."
+msgstr "<span foreground=\"red\">Achtung:</span> Der Bus darf nicht namenlos bleiben."
+
+msgid "Specify the default clock for future cells."
+msgstr ""
+
+msgid "_Start Simulation"
+msgstr "Simulation _beginnen"
+
+# msgid "Starting initialization\n"
+# msgstr ""
+msgid "S_top Simulation"
+msgstr "Simulation be_enden"
+
+msgid "Substrate"
+msgstr "Substrat"
+
+msgid "Temperature:"
+msgstr "Temperatur:"
+
+# msgid "Text:"
+# msgstr ""
+msgid "The file \"%s\" is not a regular file.  Maybe it's a directory, or a device file.  Please choose a regular file."
+msgstr "\"%s\" ist nicht eine reguläre Datei. Möglicherweise ist es ein Ordner oder eine Gerätdatei. Bitte wählen sie eine reguläre Datei aus."
+
+msgid "The selection must be able to drop before it can be copied.\n"
+msgstr "Die Auswahl muss fallen können ehe sie kopiert werden kann.\n"
+
+msgid "This button allows you to manipulate your design."
+msgstr "Dieser Knopf erlaubt es Ihnen Ihren Design zu manipulieren."
+
+msgid "Thresholds..."
+msgstr "Grenzwerte..."
+
+msgid "Time Step:"
+msgstr ""
+
+msgid "Toggle between two different display modes."
+msgstr ""
+
+msgid "_Tools"
+msgstr "_Werkzeuge"
+
+msgid "Top Margin:"
+msgstr "Oberer Rand:"
+
+msgid "Trace"
+msgstr "Graph"
+
+msgid "Translate"
+msgstr "Verschieben"
+
+msgid "Translate Selection"
+msgstr "Auswahl Verschieben"
+
+msgid "Translate your selection horizontally and/or vertically."
+msgstr "Auswahl horizontal und/order vertikal verschieben."
+
+msgid "Untitled"
+msgstr "Namenlos"
+
+msgid "Untitled Bus"
+msgstr "Namenloser Bus"
+
+msgid "Untitled Layer"
+msgstr "Namenlose Ebene"
+
+msgid "Upper Threshold [1]:"
+msgstr "Oberer Grenzwert [1]:"
+
+msgid "Usage: %s <simulation results file>\n"
+msgstr "Aufruf: %s <Simulationresultatendatei>\n"
+
+msgid "Vector Table"
+msgstr "Vektortabelle"
+
+msgid "Vector Table Operations"
+msgstr "Vektortabellenbetätigungen"
+
+msgid "Vector Table Setup"
+msgstr "Einstellungen der Vektortabelle"
+
+msgid "Vertical:"
+msgstr "Vertikal:"
+
+msgid "Vertical"
+msgstr "Vertikal"
+
+msgid "Vertically"
+msgstr "Vertikal"
+
+msgid "_View"
+msgstr "_Ansicht"
+
+msgid "Visible"
+msgstr "Sichtbar"
+
+msgid "You appear to have an autosave file.  Would you like to recover it ?"
+msgstr "Sie scheinen eine Autospeicherdatei zu haben. Möchten Sie sie wiederherstellen ?"
+
+msgid "You have made changes to your design.  Closing your design will discard those changes.  Save first ?"
+msgstr "Sie haben Ihren Design verändert. Wenn Sie den Design schließen, werden Sie diese Veränderungen verlieren. Speichern zuerst ?"
+
+msgid "You have made changes to your design.  Opening another design will discard those changes. Save first ?"
+msgstr "Sie haben Ihren Design verändert. Wenn Sie einen anderen Design öffnen, werden Sie diese Veränderungen verlieren. Speichern zuerst ?"
+
+msgid "You have made changes to your design.  Quitting QCADesigner will discard those changes.  Save first ?"
+msgstr "Sie haben Ihren Design verändert. Wenn Sie QCADesigner beenden, werden Sie diese Veränderungen verlieren. Speichern zuerst ?"
+
+msgid "You have made changes to your design.  Starting a new design will discard those changes.  Save first ?"
+msgstr "Sie haben Ihren Design verändert. Wenn Sie einen neuen Design anfangen, werden Sie diese Veränderungen verlieren. Speichern zuerst ?"
+
+msgid "Zoom Extents"
+msgstr "Auf Gesamtdesign zoomen"
+
+msgid "Zoom In"
+msgstr "Heranzoomen"
+
+msgid "Zoom Layer Extents"
+msgstr "Auf Ebene zoomen"
+
+msgid "Zoom Out"
+msgstr "Wegzoomen"
+

@@ -1,0 +1,184 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+    	<link rel="shortcut icon" href="QCADesigner.ico" type="image/x-icon">
+    	<title>QCADesigner - Documentation</title>
+</head>
+<body bgcolor="#ffffff" marginwidth="0" marginheight="0" leftmargin="0" topmargin="0">
+<a name="top">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td colspan="2" align="left" valign="middle">
+<img src="images/qcadlogo_gradient.png" alt="QCADesigner <:>"><br>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" bgcolor="#cad6e2" width="0%">
+
+<!--MENU-->
+
+</td>
+<td align="left" valign="top">
+<table border="0" cellspacing="0" cellpadding="10"><tr><td>
+<h1>QCA<em>Designer</em> Documentation</h1>
+
+<h2>Coherence Vector Simulation Engine</h2>
+<p>The coherence vector simulation is based on a density matrix approach. It can model dissipative effects as well as perform a time-dependent simulation of the design<a href="#1">[1]</a>. As with the other simulation engines, it assumes that each cell is a simple two-state system. For this two-state system the following Hamiltonian can be constructed<a href="#2">[2]</a>:
+
+<p>
+<table border="0" width="100%">
+  <tr>
+  <td width="100%" align="center" valign="middle"><img src="images/two_state_hamiltonian.png"></td>
+  <td>(1)</td>
+  </tr>
+</table>
+
+<p>where <i>E<sup>k</sup><sub>i,j</sub></i> is the kink energy between cell <i>i</i> and <i>j</i>. This kink energy is associated with the energy cost of two cells having opposite polarization. <i>P<sub>j</sub></i> is the polarization of cell <i>j</i>. <i>&gamma;</i> is the tunneling energy of electrons within the cell and is directly connected to the clock; i.e. the clock value is the tunneling energy. The summation is over all cells within an <a href="#radius_of_effect">effective radius</a> of cell <i>i</i>, and can be set prior to the simulation. 
+
+<h2>Kink Energy</h2>
+<p>The kink energy <i>E<sup>k</sup><sub>i,j</sub></i> represents the energy cost of cells <i>i</i> and <i>j</i> having opposite polarization. It is calculated simply from the electrostatic interaction between all the charges (mobile/immobile). That is, for each dot in cell <i>i</i> we calculate the electrostatic interaction between this dot and each dot in cell <i>j</i> as
+
+<p><center><img src="images/electrostatic_energy.png"></center>
+
+<p>here &epsilon;<sub>0</sub> is the permittivity of free space and &epsilon;<sub>r</sub> is the <a href="#relative_permittivity">relative permittivity</a> of the material system. This is summed over all <i>i</i> and <i>j</i>. To find the kink energy we first compute this electrostatic energy when the cells have opposite polarization, then again when the cells have the same polarization and subtract them.
+
+<p>Because the cell is charge neutral (immobile positive charges cancel the charged electrons) the cells interact through a quadrupole-quadrupole interaction which decays inversely as a power of five of the distance between cells. Therefore the kink energy will decay rapidly with distance and the <a href="#radius_of_effect">effective neighborhood</a> of interacting cells can be made small.
+
+<h2>Coherence Vector</h2>
+<p>The coherence vector &lambda; is a vector representation of the density matrix &rho; of a cell, projected onto the basis spanned by the Identity and the Pauli spin matrices <i>&sigma;<sub>x</sub></i>,<i>&sigma;<sub>y</sub></i>,and <i>&sigma;<sub>z</sub></i>. The components of &lambda; are found by taking the Trace of the density matrix multiplied by each of the Pauli spin matrices; i.e.
+
+<p><center><img src="images/coherence_vector_components.png"></center>
+
+<p>The polarization of cell <i>i</i>, <i>P<sub>i</sub></i> is just the <i>z</i> component of the coherence vector.
+
+<p><center><img src="images/polarization_definition.png"></center>
+
+<p>The Hamiltonian must also be projected onto the spin matrices as
+
+<p><center><img src="images/gamma_components.png"></center>
+
+<p>This vector &Gamma; represents the energy environment of the cell, including the effect of neighboring cells. We can evaluate the explicit expression for &Gamma; by substituting it into our Hamiltonian. This explicit expression is
+
+<p><center><img src="images/explicit_gamma.png"></center>
+
+<p>here <i>S</i> is the <a href="#radius_of_effect">effective neighborhood</a> of cell <i>i</i>. The equation of motion for the coherence vector including dissipative effects is
+
+<p>
+<table border="0" width="100%">
+  <tr>
+  <td width="100%" align="center" valign="middle"><img src="images/coherence_equation_motion.png"></td>
+  <td>(2)</td>
+  </tr>
+</table>
+
+<p>here &tau; is the <a href="#relaxation_time">relaxation time</a>, and is a time constant representing the dissipation of energy into the environment. <i>&lambda;<sub>ss</sub></i> is the steady state coherence vector defined as
+
+<p><center><img src="images/lambda_steady_state.png"></center>
+
+<p>&Delta; is the temperature ratio defined as
+
+<p><center><img src="images/temperature_ratio.png"></center>
+
+<p>where <i>T</i> is the <a href="#temperature">temperature</a> in Kelvin. <i>k<sub>B</sub></i> is Boltzmann's constant.
+
+<p>The simulation engine evaluates the equation of motion (a partial differential equation) using an explicit time marching algorithm. For each <a href="#time_step">time step</a> the &Gamma; and <i>&lambda;<sub>ss</sub></i> for each cell is evaluated and then the coherence vector for each cell is stepped forward in time.
+
+
+<a name="engine_options">
+<h2>Engine Options</h2>
+
+<center><img src="images/coherence_options.png" alt="Bistable Simulation Options"></center>
+
+<a name="temperature">
+<h3>Temperature</h3>
+
+<p>The temperature of the simulation in Kelvin. Has an effect on the steady state vector as described above.
+
+<a name="relaxation_time">
+<h3>Relaxation Time</h3>
+
+<p>The relaxation time &tau; is explained above and determines how quickly the system settles to a steady state.
+
+<a name="time_step">
+<h3>Time Step</h3>
+
+<p>The time step between samples. Because this engine is currently using an explicit time marching algorithm the simulation may become unstable if this value is too large. If the simulation becomes unstable the engine will immediately quit and you will have to reduce the time step. If you set it too small relative to the <a href="#total_simulation_time">total simulation time</a> the simulation may take an unreasonable amount of time.
+
+<a name="total_simulation_time">
+<h3>Total Simulation Time</h3>
+
+      <p>The total duration of the simulation. Be careful not to set this to large 
+        if your <a href="time_step">time step</a> is too small because the simulation 
+        may take days! The total number of samples = total simulation time / time 
+        step.
+      <h2>Clock Signal</h2>
+      <p>The clock signal in <strong>QCA<em>Designer</em></strong> is calculated 
+        as a hard-saturating cosine as shown below. The clock signal is tied directly 
+        to the tunneling energy in the Hamiltonian.</p>
+      <p align="center"><img src="images/clock_signal.png" alt="Clock Signal"></p>
+<h3>Clock High/Clock Low</h3>
+
+      <p>Clock low and high values are the saturation energies for the clock signal. 
+        When the clock is high the cell is unlatched. When it is low the cell 
+        is latched. The defaults seem to work in most cases, however, you may 
+        wish to play with them. 
+      <h3>Clock Shift</h3>
+      <p>The clock shift allows you to add a positive or negative offset to the 
+        clock as shown in the above figure.
+      <h3>Clock Amplitude Factor</h3>
+      <p>Clock amplitude factor is multiplied by (Clock High - Clock Low) and 
+        reflects the amplitude of the underlying cosine as shown in the above 
+        figure.<a name="radius_of_effect"> </p>
+      <h3>Radius of Effect</h3>
+
+      <p>Because the interaction effect of one cell onto another decays inversely with 
+        the fifth power of the distance between cells, we do not need to consider 
+        each cell as effecting every other cell. This number determines how far 
+        each cell will look to find its neighbors. Make sure that at least the 
+        next-to-nearest neighbors are included in this radius. If you only allow 
+        for the nearest neighbor then I would not expect designs with coplanar 
+        crossovers to work. The following figure should help clear this up. 
+      <p>
+      <center>
+        <p><img src="images/radius_of_effect.png"></p>
+        <p align="left">Note that with multilayer capability the radius of effect 
+          is extended into the third dimension. Therefore in order to include 
+          cells in adjacent layers, make sure that the <a href="#layer_separation">layer 
+          separation</a> is less than the radius of effect.</p>
+      </center>
+
+<center></center>
+ 
+      <h3>Relative Permittivity</h3>
+      <p>The relative permittivity of the material system you want to simulate. 
+        For GaAs/AlGaAs it is roughly 12.9 which is the default value. This is 
+        only used in calculating the kink energy. 
+      <h3>Layer Separation</h3>
+      <p> When simulating multilayer QCA circuits, this determines the physical 
+        separation between the different cell layers in [nm].</p>
+      <h3>Euler Method/Runge Kutta</h3>
+      <p>Two different algorithms used to evaluate the differential equation. 
+      </p>
+      <h3>Randomize Simulation Order</h3>
+      <p>When active, the order in which cells are simulated is randomized in 
+        each iteration. I recommend leaving this on.</p>
+      <h3>Animate</h3>
+      <p>When active, the circuit will be animated throughout the simulation. 
+        If you zoom into the cells during the simulation you will notice that 
+        the polarization of the cells change.</p>
+      <h3>References</h3>
+<a name="1">
+<p>[1] J. Timler and C. S. Lent, "Power gain and dissipation in quantum-dot cellular automata", <i>J. Appl. Phys., vol 91, no 2, pp. 823-831, 2002</i>
+
+<a name="2">
+<p>[2] G. Toth, "Correlation and coherence in quantum-dot cellular automata", <i>Ph.D. Thesis</i>, University of Notre Dame, pp. 56-63, 2000.
+</td></tr></table>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<hr>
+<a href="#top">Top of the page</a>
+<p></td></tr></table>
+</body></html>
+<p>

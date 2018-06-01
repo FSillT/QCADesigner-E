@@ -9,7 +9,7 @@ You can also communicate with Github's api through this addon.
 
 
 Installation
------------
+-----------_
 
 The best way to install Kdyby/Github is using  [Composer](http://getcomposer.org/):
 

@@ -11,9 +11,41 @@ K. Walus, T. J. Dysart, G. A. Jullien, and R. A. Budiman, "QCADesigner: a rapid 
 
 Installation
 ============
+Switch to source folder of the project:
 
+```sh
+$ cd QCADesignerE
+```
 
+Prepare the program for compiling by typing
 
+```sh
+$ ./autogen.sh
+```
+
+Next, you have to run the configure script to customize the compilation process for your system. The configure script provides many options. The most commonly used one is --prefix=[directory], where directory is the directory where you would like to install QCADesignerE. Once installed, the QCADesignerE program will be at QCADesignerE/bin/QCADesignerE. For example:
+
+```sh
+$ ./configure --prefix=/home/your_account/your_install_location
+```
+
+Type ./configure --help for a complete list of configure options.
+
+Compile the program with
+
+```sh
+$ make
+```
+Install the program with
+
+```sh
+$ make install
+```
+Run QCADesignerE with
+
+```sh
+$ bin\QCADesigner &
+```
 
 References
 ==========

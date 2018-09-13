@@ -3,9 +3,9 @@
 // Copyright 2002 Konrad Walus                          //
 // All Rights Reserved                                  //
 // Author: Konrad Walus                                 //
-// Email: qcadesigner@gmail.com                         //
-// WEB: http://qcadesigner.ca/                          //
 //////////////////////////////////////////////////////////
+// QCADesignerE
+// Extended by F. Sill Torres 2018
 //******************************************************//
 //*********** PLEASE DO NOT REFORMAT THIS CODE *********//
 //******************************************************//
@@ -51,9 +51,7 @@ print_design_OP print_options ;
 
 extern main_W main_window ;
 
-#ifndef WIN32
-  // Can't use WinMain without Win32
-  #undef QCAD_NO_CONSOLE
+#ifndef WIN32AQCAD_NO_CONSOLE
 #endif  /* ifndef WIN32 */
 
 #ifdef QCAD_NO_CONSOLE
@@ -67,7 +65,7 @@ int main (int argc, char *argv[])
   setlocale(LC_ALL,"C");
 struct lconv * lc;
   lc=localeconv();
-  printf ("Local Currency Symbol: %s\n",lc->decimal_point);
+  //printf ("Local Currency Symbol: %s\n",lc->decimal_point);
   GtkWindow *wndAbout = NULL ;
 #ifdef WIN32
 #ifdef QCAD_NO_CONSOLE
@@ -77,9 +75,9 @@ struct lconv * lc;
 #endif /* ifdef WIN32 */
 
 #ifdef QCAD_NO_CONSOLE
-  gtk_preamble (&argc, &argv, "QCADesigner", pszCmdLine) ;
+  gtk_preamble (&argc, &argv, "QCADesignerE", pszCmdLine) ;
 #else
-  gtk_preamble (&argc, &argv, "QCADesigner") ;
+  gtk_preamble (&argc, &argv, "QCADesignerE") ;
 #endif /* def QCAD_NO_CONSOLE */
 
 wndAbout = show_about_dialog (&(main_window.main_window), TRUE) ;

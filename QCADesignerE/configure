@@ -767,7 +767,7 @@ no_create=
 no_recursion=
 prefix=NONE
 program_prefix=NONE
-program_suffix=NONE
+program_suffix=E
 program_transform_name=s,x,x,
 silent=
 site=
@@ -2653,7 +2653,7 @@ fi
 
 # Define the identity of the package.
  PACKAGE=QCADesigner
- VERSION=2.0.3E
+ VERSION=2.2
 
 
 cat >>confdefs.h <<_ACEOF
@@ -6258,12 +6258,6 @@ fi
 
 
 
-
-
-
-
-
-
 GETTEXT_PACKAGE=QCADesigner
 
 cat >>confdefs.h <<_ACEOF
@@ -7029,7 +7023,7 @@ fi
 
 
 
-ac_config_files="$ac_config_files Makefile src/Makefile po/Makefile.in docs/Makefile pixmaps/Makefile QCADesigner.desktop graph_dialog.desktop QCADesigner.spec QCADesigner-win32.iss QCADesigner-win32-gtk.iss"
+ac_config_files="$ac_config_files Makefile src/Makefile po/Makefile.in docs/Makefile pixmaps/Makefile QCADesignerE.desktop graph_dialog.desktop QCADesignerE-win32.iss"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -7796,12 +7790,9 @@ do
     "po/Makefile.in") CONFIG_FILES="$CONFIG_FILES po/Makefile.in" ;;
     "docs/Makefile") CONFIG_FILES="$CONFIG_FILES docs/Makefile" ;;
     "pixmaps/Makefile") CONFIG_FILES="$CONFIG_FILES pixmaps/Makefile" ;;
-    "QCADesigner.desktop") CONFIG_FILES="$CONFIG_FILES QCADesigner.desktop" ;;
-    "graph_dialog.desktop") CONFIG_FILES="$CONFIG_FILES graph_dialog.desktop" ;;
-    "QCADesigner.spec") CONFIG_FILES="$CONFIG_FILES QCADesigner.spec" ;;
-    "QCADesigner-win32.iss") CONFIG_FILES="$CONFIG_FILES QCADesigner-win32.iss" ;;
-    "QCADesigner-win32-gtk.iss") CONFIG_FILES="$CONFIG_FILES QCADesigner-win32-gtk.iss" ;;
-
+    "QCADesignerE.desktop") CONFIG_FILES="$CONFIG_FILES QCADesignerE.desktop" ;;
+    "QCADesignerE-win32.iss") CONFIG_FILES="$CONFIG_FILES QCADesignerE-win32.iss" ;;
+    
   *) as_fn_error $? "invalid argument: \`$ac_config_target'" "$LINENO" 5;;
   esac
 done

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="svg1185"
+   sodipodi:version="0.34"
+   width="30pt"
+   height="30pt"
+   xml:space="preserve"
+   sodipodi:docbase="/home/nix/source/QCADesigner/pixmaps/"
+   sodipodi:docname="/home/nix/source/QCADesigner/pixmaps/reorder_layers.svg"><defs
+   id="defs1187" /><sodipodi:namedview
+   id="base" /><path
+   style="font-size:12;fill:#0573e8;fill-rule:evenodd;stroke:#000000;stroke-width:0.0;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1;stroke-dasharray:none;"
+   d="M 9.5 6.25 C 5.5 6.25 4.5 13.75 4.5 18.75 C 4.5 23.75 5.5 31.25 9.5 31.25 L 9.5 30 L 12 32.5 L 9.5 35 L 9.5 33.75 C 3.5 33.75 2 24.75 2 18.75 C 2 12.75 3.5 3.75 9.5 3.75 L 9.5 2.5 L 12 5 L 9.5 7.5 L 9.5 6.25 z "
+   id="arrow"
+   sodipodi:nodetypes="ccccccccccccc" /><g
+   id="planes"
+   transform="translate(7.5,0)"><path
+   style="font-size:12;fill:#fa543a;fill-rule:evenodd;stroke:#fa543a;stroke-width:0.375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;fill-opacity:0.75;stroke-opacity:1;"
+   d="M 15 1 L 45 1 L 35 11 L 5 11 z "
+   id="red_plane" /><path
+   style="font-size:12;fill:#877de3;fill-rule:evenodd;stroke:#877de3;stroke-width:0.375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;fill-opacity:0.75;stroke-opacity:1;"
+   d="M 15 0 L 45 0 L 35 10 L 5 10 L 15 0 z "
+   id="blue_plane"
+   transform="translate(0,13.75)"
+   sodipodi:nodetypes="cccccc" /><path
+   style="font-size:12;fill:#00c24a;fill-rule:evenodd;stroke:#00c24a;stroke-width:0.375;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;fill-opacity:0.75;stroke-opacity:1;"
+   d="M 15 0 L 45 0 L 35 10 L 5 10 z "
+   id="green_plane"
+   transform="translate(0,26.5)" /></g></svg>

@@ -36,10 +36,8 @@ build_triplet = x86_64-unknown-linux-gnu
 host_triplet = x86_64-unknown-linux-gnu
 subdir = .
 DIST_COMMON = README $(am__configure_deps) $(srcdir)/Makefile.am \
-	$(srcdir)/Makefile.in $(srcdir)/QCADesigner-win32-gtk.iss.in \
-	$(srcdir)/QCADesigner-win32.iss.in \
-	$(srcdir)/QCADesigner.desktop.in $(srcdir)/QCADesigner.spec.in \
-	$(srcdir)/graph_dialog.desktop.in $(top_srcdir)/configure \
+	$(srcdir)/Makefile.in $(srcdir)/QCADesignerE-win32.iss.in \
+	$(srcdir)/QCADesignerE.desktop.in $(top_srcdir)/configure \
 	AUTHORS COPYING ChangeLog INSTALL NEWS TODO compile \
 	config.guess config.sub depcomp install-sh missing
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
@@ -49,9 +47,7 @@ am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \
  configure.lineno config.status.lineno
 mkinstalldirs = $(install_sh) -d
-CONFIG_CLEAN_FILES = QCADesigner.desktop graph_dialog.desktop \
-	QCADesigner.spec QCADesigner-win32.iss \
-	QCADesigner-win32-gtk.iss
+CONFIG_CLEAN_FILES = QCADesignerE.desktop QCADesignerE-win32.iss
 CONFIG_CLEAN_VPATH_FILES =
 SOURCES =
 DIST_SOURCES =
@@ -140,11 +136,11 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/frank/qcae/src/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /home/frank/QCA/QCAEnergy/src/missing --run aclocal-1.11
 AMTAR = $${TAR-tar}
-AUTOCONF = ${SHELL} /home/frank/qcae/src/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/frank/qcae/src/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/frank/qcae/src/missing --run automake-1.11
+AUTOCONF = ${SHELL} /home/frank/QCA/QCAEnergy/src/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/frank/QCA/QCAEnergy/src/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/frank/QCA/QCAEnergy/src/missing --run automake-1.11
 AWK = gawk
 CATALOGS =  de.gmo hu.gmo ro.gmo fr.gmo
 CATOBJEXT = .gmo
@@ -155,7 +151,7 @@ CPP = gcc -E
 CPPFLAGS = 
 CYGPATH_W = echo
 DATADIRNAME = share
-DEFS = -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"QCADesigner\" -DVERSION=\"2.0.3E\" -DSTDC_HEADERS=1 -DGETTEXT_PACKAGE=\"QCADesigner\" -DPACKAGE_SOURCE_DIR=\"/home/frank/qcae/src\" -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_LOCALE_H=1 -DHAVE_LC_MESSAGES=1 -DHAVE_BIND_TEXTDOMAIN_CODESET=1 -DHAVE_GETTEXT=1 -DHAVE_DCGETTEXT=1 -DENABLE_NLS=1
+DEFS = -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"QCADesigner\" -DVERSION=\"2.2\" -DSTDC_HEADERS=1 -DGETTEXT_PACKAGE=\"QCADesigner\" -DPACKAGE_SOURCE_DIR=\"/home/frank/QCA/QCAEnergy/src\" -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_LOCALE_H=1 -DHAVE_LC_MESSAGES=1 -DHAVE_BIND_TEXTDOMAIN_CODESET=1 -DHAVE_GETTEXT=1 -DHAVE_DCGETTEXT=1 -DENABLE_NLS=1
 DEPDIR = .deps
 ECHO_C = 
 ECHO_N = -n
@@ -187,7 +183,7 @@ LIBOBJS =
 LIBS = 
 LTLIBOBJS = 
 MAINT = #
-MAKEINFO = ${SHELL} /home/frank/qcae/src/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/frank/QCA/QCAEnergy/src/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
 MKINSTALLDIRS = ./mkinstalldirs
 MSGFMT = /usr/bin/msgfmt
@@ -212,12 +208,12 @@ SET_MAKE =
 SHELL = /bin/sh
 STRIP = 
 USE_NLS = yes
-VERSION = 2.0.3E
+VERSION = 2.2
 XGETTEXT = /usr/bin/xgettext
-abs_builddir = /home/frank/qcae/src
-abs_srcdir = /home/frank/qcae/src
-abs_top_builddir = /home/frank/qcae/src
-abs_top_srcdir = /home/frank/qcae/src
+abs_builddir = /home/frank/QCA/QCAEnergy/src
+abs_srcdir = /home/frank/QCA/QCAEnergy/src
+abs_top_builddir = /home/frank/QCA/QCAEnergy/src
+abs_top_srcdir = /home/frank/QCA/QCAEnergy/src
 ac_ct_CC = gcc
 am__include = include
 am__leading_dot = .
@@ -233,7 +229,7 @@ build_vendor = unknown
 builddir = .
 datadir = ${datarootdir}
 datarootdir = ${prefix}/share
-docdir = $(datadir)/doc/QCADesigner-2.0.3E
+docdir = $(datadir)/doc/QCADesigner-2.2
 dvidir = ${docdir}
 exec_prefix = ${prefix}
 host = x86_64-unknown-linux-gnu
@@ -244,7 +240,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/frank/qcae/src/install-sh
+install_sh = ${SHELL} /home/frank/QCA/QCAEnergy/src/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -252,10 +248,10 @@ localstatedir = ${prefix}/var
 mandir = ${datarootdir}/man
 mkdir_p = /bin/mkdir -p
 oldincludedir = /usr/include
-packagesrcdir = /home/frank/qcae/src
+packagesrcdir = /home/frank/QCA/QCAEnergy/src
 pdfdir = ${docdir}
-prefix = /home/frank/qcae
-program_transform_name = s,x,x,
+prefix = /home/frank/QCA/QCAEnergy
+program_transform_name = s&$$&E&
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
@@ -278,7 +274,7 @@ doc_DATA = \
 qcasample_DATA = \
   sample.qca
 
-app_DATA = QCADesigner.desktop graph_dialog.desktop
+app_DATA = QCADesignerE.desktop
 EXTRA_DIST = $(doc_DATA) $(app_DATA)
 all: all-recursive
 
@@ -317,15 +313,9 @@ $(top_srcdir)/configure: # $(am__configure_deps)
 $(ACLOCAL_M4): # $(am__aclocal_m4_deps)
 	$(am__cd) $(srcdir) && $(ACLOCAL) $(ACLOCAL_AMFLAGS)
 $(am__aclocal_m4_deps):
-QCADesigner.desktop: $(top_builddir)/config.status $(srcdir)/QCADesigner.desktop.in
+QCADesignerE.desktop: $(top_builddir)/config.status $(srcdir)/QCADesignerE.desktop.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
-graph_dialog.desktop: $(top_builddir)/config.status $(srcdir)/graph_dialog.desktop.in
-	cd $(top_builddir) && $(SHELL) ./config.status $@
-QCADesigner.spec: $(top_builddir)/config.status $(srcdir)/QCADesigner.spec.in
-	cd $(top_builddir) && $(SHELL) ./config.status $@
-QCADesigner-win32.iss: $(top_builddir)/config.status $(srcdir)/QCADesigner-win32.iss.in
-	cd $(top_builddir) && $(SHELL) ./config.status $@
-QCADesigner-win32-gtk.iss: $(top_builddir)/config.status $(srcdir)/QCADesigner-win32-gtk.iss.in
+QCADesignerE-win32.iss: $(top_builddir)/config.status $(srcdir)/QCADesigner-win32.iss.in
 	cd $(top_builddir) && $(SHELL) ./config.status $@
 install-appDATA: $(app_DATA)
 	@$(NORMAL_INSTALL)
@@ -846,9 +836,8 @@ squeaky : distclean
 	src/Makefile.in \
 	docs/Makefile.in \
 	pixmaps/Makefile.in \
-	QCADesigner.desktop \
-	graph_dialog.desktop \
-	QCADesigner-win32.iss \
+	QCADesignerE.desktop \
+	QCADesignerE-win32.iss \
 	po/Makefile po/Makefile.in po/Makefile.in.in \
 	po/POTFILES po/*.gmo `find . | grep '.#'` *~
 

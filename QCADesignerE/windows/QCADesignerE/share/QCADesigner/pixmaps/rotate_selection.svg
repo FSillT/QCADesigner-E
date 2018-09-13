@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="svg1185"
+   sodipodi:version="0.34"
+   width="30pt"
+   height="30pt"
+   xml:space="preserve"
+   sodipodi:docbase="/home/nix/source/QCADesigner/pixmaps/"
+   sodipodi:docname="/home/nix/source/QCADesigner/pixmaps/rotate_selection.svg"><defs
+   id="defs1187" /><sodipodi:namedview
+   id="base" /><g
+   id="Rotate Selection Icon"><path
+   style="font-size:12;fill:#00ff00;fill-rule:evenodd;stroke:#007f00;stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1;"
+   d="M 23.125 4.375 L 18.75 0 L 18.75 2.5 C 9.775373 2.5 2.5 9.775373 2.5 18.75 C 2.5 11.84644 11.84644 6.25 18.75 6.25 L 18.75 8.75 L 23.125 4.375 "
+   id="Upper Arrow"
+   sodipodi:nodetypes="ccccccc" /><path
+   style="font-size:12;fill:#00ff00;fill-rule:evenodd;stroke:#007f00;stroke-width:1.25;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;"
+   d="M 2.499999 14.375 L 6.874999 18.75 L 6.874999 16.25 C 15.84963 16.25 23.125 8.974626 23.125 -0.000001 C 23.125 6.903559 13.77856 12.5 6.874999 12.5 L 6.874999 9.999999 L 2.499999 14.375 "
+   id="Lower Arrow"
+   sodipodi:nodetypes="ccccccc"
+   transform="translate(11.875,18.75)" /></g></svg>

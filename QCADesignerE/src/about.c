@@ -83,7 +83,7 @@ static void create_about_dialog (about_D *about_dialog)
   char *psz = NULL ;
 
   about_dialog->about_dialog = gtk_dialog_new ();
-  gtk_window_set_title (GTK_WINDOW (about_dialog->about_dialog), _("About QCADesigner"));
+  gtk_window_set_title (GTK_WINDOW (about_dialog->about_dialog), _("About QCADesignerE"));
   gtk_window_set_resizable (GTK_WINDOW (about_dialog->about_dialog), FALSE);
 
   about_dialog->dialog_vbox1 = GTK_DIALOG (about_dialog->about_dialog)->vbox;
@@ -102,16 +102,17 @@ static void create_about_dialog (about_D *about_dialog)
   gtk_box_pack_start (GTK_BOX (about_dialog->vbox1), about_dialog->pixmap1, TRUE, TRUE, 0);
 
   psz = g_strdup_printf (
-    "Extended version of: \n"
-    "QCADesigner-E © 2017 Version " VERSION"E \n"
+    "QCADesigner-E Version " VERSION " \n"
+    "Contributers:\n"
+    "F. Sill Torres, P. Niemann\n"
+    "Contact: frasillt@uni-bremen.de\n"
+    "Web: https://github.com/FSillT/QCADesigner-E\n\n"
+    "QCADesigner-E is an extended version of QCADesigner © 2005 (2.0.3) \n"
     "%s\n%s\n"
     "G. Schulhof, M. Mazur, T. Dysart, A. Vetteth\n"
     "J. Eskritt, G.A. Jullien, V.S. Dimitrov\n"
-    "Dominic A. Antonelli\n"
-    "Extended by:\n"
-    "F. Sill Torres, P. Niemann",
+    "Dominic A. Antonelli\n",    
     _("Protected by Copright 2005 K. Walus"),
-    _("Protected by Copright 2017 F. Sill Torres"),
     _("Contributers:"));
   about_dialog->about_label = gtk_label_new (psz);
   gtk_widget_show (about_dialog->about_label);

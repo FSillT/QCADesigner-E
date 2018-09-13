@@ -75,11 +75,11 @@ am__uninstall_files_from_dir = { \
 am__installdirs = "$(DESTDIR)$(pixmapdir)"
 DATA = $(pixmap_DATA)
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/frank/qcae/src/missing --run aclocal-1.11
+ACLOCAL = ${SHELL} /home/frank/QCA/QCAEnergy/src/missing --run aclocal-1.11
 AMTAR = $${TAR-tar}
-AUTOCONF = ${SHELL} /home/frank/qcae/src/missing --run autoconf
-AUTOHEADER = ${SHELL} /home/frank/qcae/src/missing --run autoheader
-AUTOMAKE = ${SHELL} /home/frank/qcae/src/missing --run automake-1.11
+AUTOCONF = ${SHELL} /home/frank/QCA/QCAEnergy/src/missing --run autoconf
+AUTOHEADER = ${SHELL} /home/frank/QCA/QCAEnergy/src/missing --run autoheader
+AUTOMAKE = ${SHELL} /home/frank/QCA/QCAEnergy/src/missing --run automake-1.11
 AWK = gawk
 CATALOGS =  de.gmo hu.gmo ro.gmo fr.gmo
 CATOBJEXT = .gmo
@@ -90,7 +90,7 @@ CPP = gcc -E
 CPPFLAGS = 
 CYGPATH_W = echo
 DATADIRNAME = share
-DEFS = -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"QCADesigner\" -DVERSION=\"2.0.3E\" -DSTDC_HEADERS=1 -DGETTEXT_PACKAGE=\"QCADesigner\" -DPACKAGE_SOURCE_DIR=\"/home/frank/qcae/src\" -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_LOCALE_H=1 -DHAVE_LC_MESSAGES=1 -DHAVE_BIND_TEXTDOMAIN_CODESET=1 -DHAVE_GETTEXT=1 -DHAVE_DCGETTEXT=1 -DENABLE_NLS=1
+DEFS = -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"QCADesigner\" -DVERSION=\"2.2\" -DSTDC_HEADERS=1 -DGETTEXT_PACKAGE=\"QCADesigner\" -DPACKAGE_SOURCE_DIR=\"/home/frank/QCA/QCAEnergy/src\" -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_LOCALE_H=1 -DHAVE_LC_MESSAGES=1 -DHAVE_BIND_TEXTDOMAIN_CODESET=1 -DHAVE_GETTEXT=1 -DHAVE_DCGETTEXT=1 -DENABLE_NLS=1
 DEPDIR = .deps
 ECHO_C = 
 ECHO_N = -n
@@ -122,7 +122,7 @@ LIBOBJS =
 LIBS = 
 LTLIBOBJS = 
 MAINT = #
-MAKEINFO = ${SHELL} /home/frank/qcae/src/missing --run makeinfo
+MAKEINFO = ${SHELL} /home/frank/QCA/QCAEnergy/src/missing --run makeinfo
 MKDIR_P = /bin/mkdir -p
 MKINSTALLDIRS = ./mkinstalldirs
 MSGFMT = /usr/bin/msgfmt
@@ -147,12 +147,12 @@ SET_MAKE =
 SHELL = /bin/sh
 STRIP = 
 USE_NLS = yes
-VERSION = 2.0.3E
+VERSION = 2.2
 XGETTEXT = /usr/bin/xgettext
-abs_builddir = /home/frank/qcae/src/pixmaps
-abs_srcdir = /home/frank/qcae/src/pixmaps
-abs_top_builddir = /home/frank/qcae/src
-abs_top_srcdir = /home/frank/qcae/src
+abs_builddir = /home/frank/QCA/QCAEnergy/src/pixmaps
+abs_srcdir = /home/frank/QCA/QCAEnergy/src/pixmaps
+abs_top_builddir = /home/frank/QCA/QCAEnergy/src
+abs_top_srcdir = /home/frank/QCA/QCAEnergy/src
 ac_ct_CC = gcc
 am__include = include
 am__leading_dot = .
@@ -179,7 +179,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/frank/qcae/src/install-sh
+install_sh = ${SHELL} /home/frank/QCA/QCAEnergy/src/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -187,10 +187,10 @@ localstatedir = ${prefix}/var
 mandir = ${datarootdir}/man
 mkdir_p = /bin/mkdir -p
 oldincludedir = /usr/include
-packagesrcdir = /home/frank/qcae/src
+packagesrcdir = /home/frank/QCA/QCAEnergy/src
 pdfdir = ${docdir}
-prefix = /home/frank/qcae
-program_transform_name = s,x,x,
+prefix = /home/frank/QCA/QCAEnergy
+program_transform_name = s&$$&E&
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
@@ -206,6 +206,10 @@ pixmap_DATA = \
 	QCADesigner.svg \
 	QCADesigner.win32.ico \
 	QCADesigner.winxp.ico \
+	QCADesignerE.ico \
+	QCADesignerE.svg \
+	QCADesignerE.win32.ico \
+	QCADesignerE.winxp.ico \
 	QCADesigner_0_48x48x24a.png \
 	QCADesigner_1_32x32x24a.png \
 	QCADesigner_2_16x16x24a.png \
@@ -215,6 +219,15 @@ pixmap_DATA = \
 	QCADesigner_6_48x48x8.png \
 	QCADesigner_7_32x32x8.png \
 	QCADesigner_8_16x16x8.png \
+	QCADesignerE_0_48x48x24a.png \
+	QCADesignerE_1_32x32x24a.png \
+	QCADesignerE_2_16x16x24a.png \
+	QCADesignerE_3_48x48x24.png \
+	QCADesignerE_4_32x32x24.png \
+	QCADesignerE_5_16x16x24.png \
+	QCADesignerE_6_48x48x8.png \
+	QCADesignerE_7_32x32x8.png \
+	QCADesignerE_8_16x16x8.png \
 	about.png \
 	about.svg \
 	bus.png \

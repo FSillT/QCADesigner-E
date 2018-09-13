@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created with Sodipodi ("http://www.sodipodi.com/") -->
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   id="svg602"
+   sodipodi:version="0.34"
+   width="24pt"
+   height="24pt"
+   xml:space="preserve"
+   sodipodi:docbase="/home/nix/calgary/source/QCADesigner/pixmaps"
+   sodipodi:docname="/home/nix/calgary/source/QCADesigner/pixmaps/clock.svg"><defs
+   id="defs604" /><sodipodi:namedview
+   id="base"
+   gridspacingy="0.5pt"
+   gridspacingx="0.5pt"
+   snaptogrid="true"
+   showgrid="true"
+   snaptoguides="true"
+   gridtolerance="6pt"
+   guidetolerance="0.05pt"
+   borderlayer="top" /><path
+   style="font-size:12;fill:none;fill-rule:evenodd;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4.375;stroke-dasharray:none;"
+   d="M 3.75 3.75 L 3.75 26.25 L 26.25 26.25 L 26.25 3.75 L 3.75 3.75 z "
+   id="path638" /><path
+   style="font-size:12;fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:4.375;stroke-dasharray:none;stroke-opacity:1;"
+   d="M 26.25 26.25 L 20.625 26.25 L 17.8125 26.25 L 12.1875 3.75 L 9.375 3.75 L 3.75 3.75 "
+   id="path639"
+   sodipodi:nodetypes="cccccc" /></svg>

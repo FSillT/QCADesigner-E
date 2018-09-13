@@ -99,7 +99,7 @@ typedef struct
 static FILE *diss_trace_file; // handle to file that shall receive trace => will be "Diss.trace"
 static double old_clock[4] = {0,0,0,0}; // determination of old clk values for definition of input signal value
 static int zero_mode[4] = {0,0,0,0}; // definition if input of clk_zone 0-3 is zeroed or not (during simulation)
-
+static disstrace_open = 1; // checks if diss_trace file is open
 
 //FST end 
   
@@ -181,12 +181,23 @@ simulation_data *run_coherence_energy_simulation (int SIMULATION_TYPE, DESIGN *d
     
   STOP_SIMULATION = FALSE;
   
-  //FST: open file
-  if ((diss_trace_file = fopen ("Diss.trace", "w+")) == NULL) {
-    printf("Diss.trace cann't be open!\n");
-    exit(1);
+  //Define filename of Disstrace file
+  char filename[0x100];
+#ifdef WIN32
+  char *pszHomeDIR = getenv ("HOMEPATH") ;   
+  if (!(NULL == pszHomeDIR)) {      
+      snprintf(filename, sizeof(filename), "%s/QCADesignerE_Diss.trace", pszHomeDIR);
   }
-  //FST_end
+#else
+    snprintf(filename, sizeof(filename), "QCADesignerE_Diss.trace");
+#endif
+
+  if ((diss_trace_file = fopen (filename, "w+")) == NULL) {
+    printf("QCADesignerE_Diss.trace can't be created!\n");
+    command_history_message ("QCADesignerE_Diss.trace can't be created!\n");
+    disstrace_open = 0;
+  }
+  
 
   // -- get the starting time for the simulation -- //
   if ((start_time = time (NULL)) < 0)
@@ -712,9 +723,9 @@ simulation_data *run_coherence_energy_simulation (int SIMULATION_TYPE, DESIGN *d
     E_error_all += E_error_total[idx] / QCHARGE;
   }
        
-  command_history_message("\n\nSum_bath: %.2e (Er: %.2e)\n", E_bath_all, E_error_all );
-  command_history_message("Avg_bath: %.2e (Er: %.2e)", (E_bath_all)/(max_idx-2.0), E_error_all/(max_idx-2.0) );
-  command_history_message("\nSum_clk: %.2e, Avg_clk: %.2e\n", E_clk_all,E_clk_all/(max_idx-2.0) );
+  command_history_message("\n\nTotal energy dissipation (Sum_Ebath): %.2e eV (Error: +/- %.2e eV)\n", E_bath_all, E_error_all );
+  command_history_message("Average energy dissipation per cycle (Avg_Ebath): %.2e eV (Error: +/- %.2e eV)", (E_bath_all)/(max_idx-2.0), E_error_all/(max_idx-2.0) );
+  //command_history_message("\nSum_clk: %.2e, Avg_clk: %.2e\n", E_clk_all,E_clk_all/(max_idx-2.0) );
   //command_history_message("\n\nSum: %.2e, Avg (Er: %.2e)\n", E_bath_all + E_clk_all, (E_bath_all+E_clk_all)/(max_idx-2.0) );
       
   command_history_message("\n********************************************************\n");
@@ -745,7 +756,8 @@ simulation_data *run_coherence_energy_simulation (int SIMULATION_TYPE, DESIGN *d
  
   set_progress_bar_visible (FALSE) ;
   
-  fclose(diss_trace_file);
+  if (disstrace_open == 1)
+  	fclose(diss_trace_file);
   
   //free sort
   for (i = 0; i < dim_x; i++)
@@ -954,10 +966,11 @@ static void run_coherence_iteration (unsigned long int sample_number, unsigned l
 	  #17 Pol_out
 	  #18 PEk
 	  */
-	  fprintf(diss_trace_file,"%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\n",t,lambda_z,lambda_z_new, 
-		  lambda_z-lambda_z_new, l_ss_z, sl_z, l_ss_z-lambda_z_new, l_ss_x-lambda_x_new, ((coherence_model *)sorted_cells[i][j]->cell_model)->diss_bath, 
-		  PEk_in, ((coherence_model *)sorted_cells[i][j]->cell_model)->diss_in, ((coherence_model *)sorted_cells[i][j]->cell_model)->diss_out, 
-		  ((coherence_model *)sorted_cells[i][j]->cell_model)->diss_clk, clock_value, Pol, Pol_in, Pol_out, PEk); 
+	  if (disstrace_open == 1)
+		  fprintf(diss_trace_file,"%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\n",t,lambda_z,lambda_z_new, 
+			  lambda_z-lambda_z_new, l_ss_z, sl_z, l_ss_z-lambda_z_new, l_ss_x-lambda_x_new, ((coherence_model *)sorted_cells[i][j]->cell_model)->diss_bath, 
+			  PEk_in, ((coherence_model *)sorted_cells[i][j]->cell_model)->diss_in, ((coherence_model *)sorted_cells[i][j]->cell_model)->diss_out, 
+		  	((coherence_model *)sorted_cells[i][j]->cell_model)->diss_clk, clock_value, Pol, Pol_in, Pol_out, PEk); 
 	}
 	// ******************************
 	//FST_end

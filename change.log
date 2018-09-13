@@ -1,4 +1,19 @@
-05/09/2017
+VERSION: 2.2 (13/SEP/2018)
+
+- modified files:
+pixmaps/about.png
+src/about.c
+configure
+
+
+VERSION: 2.1 (05/SEP/2017)
+- coherence_vector_energy simulation can be chosen 
+- modified options for coherence_vector_energy simulation
+- cells can have the option "Ignore Dissipation Energy", which ignores the cell energy at energy simulations
+- definition of coordinates for exact energy data logging into file Diss.trace
+- frequency of input signals can be changed (input_period)
+
+
 - added files: 
 src/.deps/QCADesigner-coherence_vector_energy_properties_dialog.Po
 src/.deps/QCADesigner-coherence_vector_energy.Po
@@ -16,13 +31,3 @@ src/callbacks.c src/callback_helpers.h
 src/main_batch_sim.c
 src/global_consts.h
 
-- new options
-coherence_vector_energy simulation can be chosen 
-modified options for coherence_vector_energy simulation
-cells can have the option "Ignore Dissipation Energy", which ignores the cell energy at energy simulations
-definition of coordinates for exact energy data logging into file Diss.trace
-frequency of input signals can be changed (input_period)
-
-known issues
-- Multi-layer information of 2.0.3 standard QCA might get lost
-- 

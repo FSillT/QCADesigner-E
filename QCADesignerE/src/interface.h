@@ -30,7 +30,7 @@
 
 #include <gtk/gtk.h>
 
-#define MAIN_WND_BASE_TITLE "QCADesigner"
+#define MAIN_WND_BASE_TITLE "QCADesigner-E"
 
 //!Structure holding main window widgets
 typedef struct

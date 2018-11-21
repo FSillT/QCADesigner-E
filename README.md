@@ -5,7 +5,7 @@ The QCADesigner-E is an extension of the QCADesigner (version 2.0.3) [1] and has
 
 QCADesigner-E is free to use and to modify. However, you must add following references in case of any publication:
 
-F. Sill Torres, R. Wille, P. Niemann, and R. Drechsler, “An energy-aware model for the logic synthesis of quantum-dot cellular automata,” IEEE Trans. on CAD of Integrated Circuits and Systems, 2018
+F. Sill Torres, R. Wille, P. Niemann, and R. Drechsler, “An energy-aware model for the logic synthesis of quantum-dot cellular automata,” IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. 37, no. 12, pp. 3031-3041, Dec. 2018.
 
 K. Walus, T. J. Dysart, G. A. Jullien, and R. A. Budiman, "QCADesigner: a rapid design and Simulation tool for quantum-dot cellular automata," IEEE Transactions on Nanotechnology, vol. 3, pp. 26-31, 2004.
 

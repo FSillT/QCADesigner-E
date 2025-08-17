@@ -99,7 +99,7 @@ typedef struct
 static FILE *diss_trace_file; // handle to file that shall receive trace => will be "Diss.trace"
 static double old_clock[4] = {0,0,0,0}; // determination of old clk values for definition of input signal value
 static int zero_mode[4] = {0,0,0,0}; // definition if input of clk_zone 0-3 is zeroed or not (during simulation)
-static disstrace_open = 1; // checks if diss_trace file is open
+static int disstrace_open = 1; // checks if diss_trace file is open
 
 //FST end 
   
@@ -943,7 +943,7 @@ static void run_coherence_iteration (unsigned long int sample_number, unsigned l
 	  double l_ss_x = -2.0 * Gamma / hypot(2*Gamma, PEk) * tanh (temp_ratio (PEk, Gamma, options->T));
 	  double l_ss_z = PEk / hypot(2*Gamma, PEk) * tanh (temp_ratio (PEk, Gamma, options->T));
 	  double sl_z = options->time_step * slope_z (t, PEk, Gamma, lambda_x, lambda_y, lambda_z, options);
-	  double Pol = qcad_cell_calculate_polarization ((coherence_model *)sorted_cells[i][j]);
+	  double Pol = qcad_cell_calculate_polarization (sorted_cells[i][j]);
 	  	  
 	  //printf("%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\t%e\n",t,lambda_x_new,l_ss_x,l_ss_x-lambda_x_new,lambda_z_new,l_ss_z,l_ss_z-lambda_z_new,lambda_y_new,((coherence_model *)sorted_cells[i][j]->cell_model)->diss_bath,PEk);
 	  /* for gnu-plot

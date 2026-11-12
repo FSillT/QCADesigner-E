@@ -122,9 +122,7 @@ src/Makefile
 po/Makefile.in
 docs/Makefile
 pixmaps/Makefile
-QCADesigner.desktop
+QCADesignerE.desktop
 graph_dialog.desktop
-QCADesigner.spec
-QCADesigner-win32.iss
-QCADesigner-win32-gtk.iss
+QCADesignerE-win32.iss
 ])

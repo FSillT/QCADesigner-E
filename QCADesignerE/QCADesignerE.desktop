@@ -2,7 +2,7 @@
 Comment=QCA-based circuit designer and simulator with energy estimation
 Name=QCADesignerE
 Exec=QCADesignerE %f
-Icon=/usr/share/QCADesigner/pixmaps/QCADesignerE_0_48x48x24a.png
+Icon=/usr/share/QCADesigner/pixmaps/QCADesignerE.svg
 Type=Application
 Terminal=0
 MapNotify=false

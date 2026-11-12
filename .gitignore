@@ -1,0 +1,59 @@
+# Compiled objects and libraries
+*.o
+*.obj
+*.a
+*.la
+*.lo
+*.so
+*.so.*
+*.dll
+*.dylib
+.deps/
+.libs/
+
+# Autotools caches and local configuration
+autom4te.cache/
+/QCADesignerE/config.log
+/QCADesignerE/config.status
+/QCADesignerE/config.cache
+/QCADesignerE/config.h
+/QCADesignerE/config.h.in
+/QCADesignerE/stamp-h*
+/QCADesignerE/**/Makefile
+/QCADesignerE/Makefile
+/QCADesignerE/aclocal.m4
+/QCADesignerE/configure
+/QCADesignerE/**/Makefile.in
+/QCADesignerE/Makefile.in
+
+# Native build executables (do not ignore packaged Windows releases)
+/QCADesignerE/src/QCADesigner
+/QCADesignerE/src/QCADesignerE
+/QCADesignerE/src/batch_sim
+/QCADesignerE/src/graph_dialog
+
+# Generated desktop and installer files; keep their .in templates
+/QCADesignerE/QCADesignerE.desktop
+/QCADesignerE/graph_dialog.desktop
+/QCADesignerE/QCADesignerE-win32.iss
+
+# Generated translation files
+/QCADesignerE/po/*.gmo
+/QCADesignerE/po/POTFILES
+/QCADesignerE/po/stamp-it
+/QCADesignerE/po/.intltool-merge-cache
+
+# Editor backups and temporary files
+*~
+*.swp
+*.swo
+.#*
+\#*\#
+
+# Local crash dumps
+core
+core.[0-9]*
+*.core
+
+# Trace file
+QCADesignerE_Diss.trace

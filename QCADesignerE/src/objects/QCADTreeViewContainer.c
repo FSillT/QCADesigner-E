@@ -78,7 +78,7 @@ GType qcad_tree_view_container_get_type ()
 static void qcad_tree_view_container_class_init (QCADTreeViewContainerClass *klass)
   {
   GTK_CONTAINER_CLASS (klass)->add = qcad_tree_view_container_add ;
-  G_OBJECT_CLASS (g_type_class_peek (QCAD_TYPE_TREE_VIEW_CONTAINER))->finalize = qcad_tree_view_container_instance_finalize ;
+  G_OBJECT_CLASS (klass)->finalize = qcad_tree_view_container_instance_finalize ;
   }
 
 static void qcad_tree_view_container_instance_init (QCADTreeViewContainer *tvc)

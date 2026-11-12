@@ -2,17 +2,17 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 [Setup]
-AppName=QCADesignerE
-AppVerName=QCADesignerE 2.2
+AppName=QCADesignerEE
+AppVerName=QCADesignerEE 2.2
 AppPublisher=University of Calgary/University of Bremen
 AppPublisherURL=https://github.com/FSillT/QCADesigner-E
 AppSupportURL=https://github.com/FSillT/QCADesigner-E
 AppUpdatesURL=https://github.com/FSillT/QCADesigner-E
-DefaultDirName={pf}\QCADesignerE
-DefaultGroupName=QCADesignerE
-LicenseFile=$ADD_INNOHOME$\share\doc\QCADesigner-2.2\COPYING
+DefaultDirName={pf}\QCADesignerEE
+DefaultGroupName=QCADesignerEE
+LicenseFile=$ADD_INNOHOME$\share\doc\QCADesignerE-2.2\COPYING
 ChangesAssociations=yes
-OutputBaseFilename=QCADesignerE-2.2-setup
+OutputBaseFilename=QCADesignerEE-2.2-setup
 
 [Tasks]
 ; NOTE: The following entry contains English phrases ("Create a desktop icon" and "Additional icons"). You are free to translate them into another language if required.
